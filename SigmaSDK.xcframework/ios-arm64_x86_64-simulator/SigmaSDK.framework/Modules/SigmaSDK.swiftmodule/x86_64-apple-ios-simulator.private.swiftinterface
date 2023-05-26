@@ -1,0 +1,96 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SigmaSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CryptoKit
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+public protocol SigmaExperiment {
+  var name: Swift.String { get }
+  var userGroupName: Swift.String? { get }
+  func getParamValue<T>(name: Swift.String) -> T? where T : SigmaSDK.SigmaPropertyType
+  func getFeatureFlagValue<T>(flagName: Swift.String) throws -> T? where T : SigmaSDK.SigmaPropertyType
+}
+public typealias SigmaSuccessCallback<T> = (T) -> Swift.Void
+public typealias SigmaErrorCallback = (SigmaSDK.SigmaError) -> Swift.Void
+public protocol SigmaClient {
+  func setUser(_ user: SigmaSDK.SigmaUser)
+  func checkFlag<T>(flagName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<T?>?, onError: SigmaSDK.SigmaErrorCallback?) where T : SigmaSDK.SigmaPropertyType
+  #if compiler(>=5.3) && $AsyncAwait
+  func checkFlag<T>(flagName: Swift.String) async throws -> T? where T : SigmaSDK.SigmaPropertyType
+  #endif
+  func getUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<[any SigmaSDK.SigmaExperiment]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #if compiler(>=5.3) && $AsyncAwait
+  func getUserExperiments() async throws -> [any SigmaSDK.SigmaExperiment]
+  #endif
+  func getUserExperiment(name: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<(any SigmaSDK.SigmaExperiment)?>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #if compiler(>=5.3) && $AsyncAwait
+  func getUserExperiment(name: Swift.String) async throws -> (any SigmaSDK.SigmaExperiment)?
+  #endif
+  func getExperimentNameByFeatureFlag(flagName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #if compiler(>=5.3) && $AsyncAwait
+  func getExperimentNameByFeatureFlag(flagName: Swift.String) async throws -> Swift.String?
+  #endif
+}
+public protocol SigmaPropertyType {
+  init?(sigmaString: Swift.String)
+}
+extension Swift.Bool : SigmaSDK.SigmaPropertyType {
+  public init?(sigmaString: Swift.String)
+}
+extension Swift.Int : SigmaSDK.SigmaPropertyType {
+  public init?(sigmaString: Swift.String)
+}
+extension Swift.Double : SigmaSDK.SigmaPropertyType {
+  public init?(sigmaString: Swift.String)
+}
+extension Swift.String : SigmaSDK.SigmaPropertyType {
+  public init?(sigmaString: Swift.String)
+}
+public enum SigmaError : Swift.Error, Swift.CustomStringConvertible {
+  case initializationOfExistingClient(tag: Swift.String)
+  case requestConfigFailed(SigmaSDK.SigmaNetworkError)
+  case requestLocationFailed(SigmaSDK.SigmaNetworkError)
+  case featureFlagNotFound(featureFlag: Swift.String)
+  case featureFlagNoRules(featureFlag: Swift.String)
+  case featureFlagRulesNotSatisfied(featureFlag: Swift.String)
+  case experimentNotFound(experiment: Swift.String)
+  case experimentGroupNotMatchingFeatureFlagGroup(experiment: Swift.String, featureFlag: Swift.String, userGroup: Swift.String, featureFlagGroups: [Swift.String])
+  case unexpectedError(any Swift.Error)
+  public var description: Swift.String {
+    get
+  }
+}
+public enum SigmaNetworkError : Swift.Error, Swift.CustomStringConvertible {
+  case urlError(any Swift.Error)
+  case wrongStatusCode(Swift.Int)
+  case decodingError(any Swift.Error)
+  case customError(Swift.String)
+  public var description: Swift.String {
+    get
+  }
+}
+public struct SigmaUser : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension SigmaSDK.SigmaUser {
+  final public class Builder {
+    public init()
+    final public func setUserId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setProfileId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setEmail(_ email: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setCustomProperty<Value>(_ value: Value, key: Swift.String) -> SigmaSDK.SigmaUser.Builder where Value : Swift.CustomStringConvertible
+    final public func build() -> SigmaSDK.SigmaUser
+    @objc deinit
+  }
+}
+public enum Sigma {
+  public static let defaultClientTag: Swift.String
+  public static func initializeClient(projectToken: Swift.String, initialUser: SigmaSDK.SigmaUser? = nil, cacheTTL: Swift.UInt = 10, retryCount: Swift.UInt = 3, tag: Swift.String = Sigma.defaultClientTag) throws -> any SigmaSDK.SigmaClient
+  public static func getClient(tag: Swift.String = Sigma.defaultClientTag) -> (any SigmaSDK.SigmaClient)?
+  public static func removeClient(tag: Swift.String = Sigma.defaultClientTag)
+}

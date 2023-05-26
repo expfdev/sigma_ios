@@ -1,0 +1,4 @@
+framework module SigmaSDK {
+  header "SigmaSDK-Swift.h"
+  requires objc
+}
