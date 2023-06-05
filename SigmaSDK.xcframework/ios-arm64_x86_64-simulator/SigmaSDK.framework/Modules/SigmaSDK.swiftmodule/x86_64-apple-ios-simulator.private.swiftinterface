@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SigmaSDK
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SigmaSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import CommonCrypto
 import CryptoKit
 import Foundation
 import Swift
@@ -20,18 +21,22 @@ public protocol SigmaClient {
   func setUser(_ user: SigmaSDK.SigmaUser)
   func checkFlag<T>(flagName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<T?>?, onError: SigmaSDK.SigmaErrorCallback?) where T : SigmaSDK.SigmaPropertyType
   #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
   func checkFlag<T>(flagName: Swift.String) async throws -> T? where T : SigmaSDK.SigmaPropertyType
   #endif
   func getUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<[any SigmaSDK.SigmaExperiment]>?, onError: SigmaSDK.SigmaErrorCallback?)
   #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
   func getUserExperiments() async throws -> [any SigmaSDK.SigmaExperiment]
   #endif
   func getUserExperiment(name: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<(any SigmaSDK.SigmaExperiment)?>?, onError: SigmaSDK.SigmaErrorCallback?)
   #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
   func getUserExperiment(name: Swift.String) async throws -> (any SigmaSDK.SigmaExperiment)?
   #endif
   func getExperimentNameByFeatureFlag(flagName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
   #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
   func getExperimentNameByFeatureFlag(flagName: Swift.String) async throws -> Swift.String?
   #endif
 }
@@ -59,7 +64,6 @@ public enum SigmaError : Swift.Error, Swift.CustomStringConvertible {
   case featureFlagRulesNotSatisfied(featureFlag: Swift.String)
   case experimentNotFound(experiment: Swift.String)
   case experimentGroupNotMatchingFeatureFlagGroup(experiment: Swift.String, featureFlag: Swift.String, userGroup: Swift.String, featureFlagGroups: [Swift.String])
-  case unexpectedError(any Swift.Error)
   public var description: Swift.String {
     get
   }
@@ -68,6 +72,7 @@ public enum SigmaNetworkError : Swift.Error, Swift.CustomStringConvertible {
   case urlError(any Swift.Error)
   case wrongStatusCode(Swift.Int)
   case decodingError(any Swift.Error)
+  case noData
   case customError(Swift.String)
   public var description: Swift.String {
     get

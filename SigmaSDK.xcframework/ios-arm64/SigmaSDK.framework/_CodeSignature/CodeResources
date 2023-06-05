@@ -6,31 +6,31 @@
 	<dict>
 		<key>Headers/SigmaSDK-Swift.h</key>
 		<data>
-		gIWZ5vTQL3nuasl+WQZtN3ijFk0=
+		wcM+pxc0o2eajJIidSS3dApDFQg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5frqrNCQbG9uyvO/rR8s3VWJ4N4=
+		jNKpjfsldByggqoDPr3B1aTaCTk=
 		</data>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		AyFsiZdcQZKKFY39hpcTVsLoXSM=
+		r2qKZhlTBEqMVg8fUCZdnIrcb+k=
 		</data>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		m2YwBfa8lEf+Kt+cvFDNMinia14=
+		9ynu5+lQ1fwl9t5KNNW2r904j50=
 		</data>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		mVQobengmRDNNMrA7znaR+0xYrE=
+		z9ptSU05RR2QsFnM7WGeNgBzTdw=
 		</data>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		m2YwBfa8lEf+Kt+cvFDNMinia14=
+		9ynu5+lQ1fwl9t5KNNW2r904j50=
 		</data>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		OZbFdQWqW/avIie6NePZahWcae0=
+		l9L0DvwDkufHf2y18IzCF6+wwCo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,42 +43,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nTQoynoZOUHubn9I1OIi2IVNmchnjjqKgL2rS1GomDQ=
+			vnXW1RDuKsbvw6H1L+AnWiB/Y/W1dwbK9JbFvPVLzb8=
 			</data>
 		</dict>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SmMmypT+V+5toe3bKOs9ySEovJIfyesRUOP000JS1c8=
+			bCKbHcA+yuW6GfaX7GlZOBwiOVw9cM2HurSvXRNOgBg=
 			</data>
 		</dict>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/qmVlWTERPuU1I4uP8vgokNWR9XCSZDFBCzbqQNDP30=
+			dwT2tItM0g+/3Ou8W0EVMjDgeNmZVhIDxHx+xJQjuzc=
 			</data>
 		</dict>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JoB5+AV8yJFx4vEJiOYRSE5m/nSCi5dw74iIs1FsWN0=
+			QAI04Mv6HziVmxMVmVHcWvjTov+/QTS5nLz+Q331KlU=
 			</data>
 		</dict>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/qmVlWTERPuU1I4uP8vgokNWR9XCSZDFBCzbqQNDP30=
+			dwT2tItM0g+/3Ou8W0EVMjDgeNmZVhIDxHx+xJQjuzc=
 			</data>
 		</dict>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZTPQpxleW39h15QHLCq0pLD/LJd7JQ9nHbCDjByj/uc=
+			YPP9J+Y7FghqGNDKiKN9IzcagGESFpAmpeKfDprSBSY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

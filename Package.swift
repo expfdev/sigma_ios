@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "SigmaSDK",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v11)
     ],
     products: [
         .library(name: "SigmaSDK", targets: ["SigmaSDK"])
