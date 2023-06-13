@@ -24,20 +24,15 @@ public protocol SigmaClient {
   @available(iOS 13, *)
   func checkFlag<T>(flagName: Swift.String) async throws -> T? where T : SigmaSDK.SigmaPropertyType
   #endif
-  func getUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<[any SigmaSDK.SigmaExperiment]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  func getAllUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<[any SigmaSDK.SigmaExperiment]>?, onError: SigmaSDK.SigmaErrorCallback?)
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
-  func getUserExperiments() async throws -> [any SigmaSDK.SigmaExperiment]
+  func getAllUserExperiments() async throws -> [any SigmaSDK.SigmaExperiment]
   #endif
-  func getUserExperiment(name: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<(any SigmaSDK.SigmaExperiment)?>?, onError: SigmaSDK.SigmaErrorCallback?)
+  func getExperiment(name: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<(any SigmaSDK.SigmaExperiment)?>?, onError: SigmaSDK.SigmaErrorCallback?)
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
-  func getUserExperiment(name: Swift.String) async throws -> (any SigmaSDK.SigmaExperiment)?
-  #endif
-  func getExperimentNameByFeatureFlag(flagName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
-  #if compiler(>=5.3) && $AsyncAwait
-  @available(iOS 13, *)
-  func getExperimentNameByFeatureFlag(flagName: Swift.String) async throws -> Swift.String?
+  func getExperiment(name: Swift.String) async throws -> (any SigmaSDK.SigmaExperiment)?
   #endif
 }
 public protocol SigmaPropertyType {
@@ -87,6 +82,14 @@ extension SigmaSDK.SigmaUser {
     public init()
     final public func setUserId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder
     final public func setProfileId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setDeviceId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setAppVersion(_ version: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setOsName(_ name: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setOsVersion(_ version: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setGeoCode(_ code: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setGeoCountry(_ country: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setGeoState(_ state: Swift.String) -> SigmaSDK.SigmaUser.Builder
+    final public func setGeoCity(_ city: Swift.String) -> SigmaSDK.SigmaUser.Builder
     final public func setEmail(_ email: Swift.String) -> SigmaSDK.SigmaUser.Builder
     final public func setCustomProperty<Value>(_ value: Value, key: Swift.String) -> SigmaSDK.SigmaUser.Builder where Value : Swift.CustomStringConvertible
     final public func build() -> SigmaSDK.SigmaUser

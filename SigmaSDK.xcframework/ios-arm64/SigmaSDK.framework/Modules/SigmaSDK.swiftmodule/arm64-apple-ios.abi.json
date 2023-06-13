@@ -447,8 +447,8 @@
           },
           {
             "kind": "Function",
-            "name": "getUserExperiments",
-            "printedName": "getUserExperiments(onSuccess:onError:)",
+            "name": "getAllUserExperiments",
+            "printedName": "getAllUserExperiments(onSuccess:onError:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -517,8 +517,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SigmaSDK0A6ClientP18getUserExperiments9onSuccess0G5ErroryySayAA0A10Experiment_pGcSg_yAA0aI0OcSgtF",
-            "mangledName": "$s8SigmaSDK0A6ClientP18getUserExperiments9onSuccess0G5ErroryySayAA0A10Experiment_pGcSg_yAA0aI0OcSgtF",
+            "usr": "s:8SigmaSDK0A6ClientP21getAllUserExperiments9onSuccess0H5ErroryySayAA0A10Experiment_pGcSg_yAA0aJ0OcSgtF",
+            "mangledName": "$s8SigmaSDK0A6ClientP21getAllUserExperiments9onSuccess0H5ErroryySayAA0A10Experiment_pGcSg_yAA0aJ0OcSgtF",
             "moduleName": "SigmaSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
             "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
@@ -528,8 +528,8 @@
           },
           {
             "kind": "Function",
-            "name": "getUserExperiments",
-            "printedName": "getUserExperiments()",
+            "name": "getAllUserExperiments",
+            "printedName": "getAllUserExperiments()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -547,8 +547,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SigmaSDK0A6ClientP18getUserExperimentsSayAA0A10Experiment_pGyYaKF",
-            "mangledName": "$s8SigmaSDK0A6ClientP18getUserExperimentsSayAA0A10Experiment_pGyYaKF",
+            "usr": "s:8SigmaSDK0A6ClientP21getAllUserExperimentsSayAA0A10Experiment_pGyYaKF",
+            "mangledName": "$s8SigmaSDK0A6ClientP21getAllUserExperimentsSayAA0A10Experiment_pGyYaKF",
             "moduleName": "SigmaSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
             "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
@@ -563,8 +563,8 @@
           },
           {
             "kind": "Function",
-            "name": "getUserExperiment",
-            "printedName": "getUserExperiment(name:onSuccess:onError:)",
+            "name": "getExperiment",
+            "printedName": "getExperiment(name:onSuccess:onError:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -639,8 +639,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SigmaSDK0A6ClientP17getUserExperiment4name9onSuccess0H5ErrorySS_yAA0aF0_pSgcSgyAA0aJ0OcSgtF",
-            "mangledName": "$s8SigmaSDK0A6ClientP17getUserExperiment4name9onSuccess0H5ErrorySS_yAA0aF0_pSgcSgyAA0aJ0OcSgtF",
+            "usr": "s:8SigmaSDK0A6ClientP13getExperiment4name9onSuccess0G5ErrorySS_yAA0aE0_pSgcSgyAA0aI0OcSgtF",
+            "mangledName": "$s8SigmaSDK0A6ClientP13getExperiment4name9onSuccess0G5ErrorySS_yAA0aE0_pSgcSgyAA0aI0OcSgtF",
             "moduleName": "SigmaSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
             "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
@@ -650,8 +650,8 @@
           },
           {
             "kind": "Function",
-            "name": "getUserExperiment",
-            "printedName": "getUserExperiment(name:)",
+            "name": "getExperiment",
+            "printedName": "getExperiment(name:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -675,136 +675,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SigmaSDK0A6ClientP17getUserExperiment4nameAA0aF0_pSgSS_tYaKF",
-            "mangledName": "$s8SigmaSDK0A6ClientP17getUserExperiment4nameAA0aF0_pSgSS_tYaKF",
-            "moduleName": "SigmaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
-            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
-            "protocolReq": true,
-            "intro_iOS": "13",
-            "declAttributes": [
-              "Available"
-            ],
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getExperimentNameByFeatureFlag",
-            "printedName": "getExperimentNameByFeatureFlag(flagName:onSuccess:onError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((SigmaSDK.SigmaError) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(SigmaSDK.SigmaError) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "SigmaError",
-                        "printedName": "SigmaSDK.SigmaError",
-                        "usr": "s:8SigmaSDK0A5ErrorO"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SigmaSDK0A6ClientP30getExperimentNameByFeatureFlag04flagF09onSuccess0K5ErrorySS_ySSSgcSgyAA0aM0OcSgtF",
-            "mangledName": "$s8SigmaSDK0A6ClientP30getExperimentNameByFeatureFlag04flagF09onSuccess0K5ErrorySS_ySSSgcSgyAA0aM0OcSgtF",
-            "moduleName": "SigmaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
-            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getExperimentNameByFeatureFlag",
-            "printedName": "getExperimentNameByFeatureFlag(flagName:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SigmaSDK0A6ClientP30getExperimentNameByFeatureFlag04flagF0SSSgSS_tYaKF",
-            "mangledName": "$s8SigmaSDK0A6ClientP30getExperimentNameByFeatureFlag04flagF0SSSgSS_tYaKF",
+            "usr": "s:8SigmaSDK0A6ClientP13getExperiment4nameAA0aE0_pSgSS_tYaKF",
+            "mangledName": "$s8SigmaSDK0A6ClientP13getExperiment4nameAA0aE0_pSgSS_tYaKF",
             "moduleName": "SigmaSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
             "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
@@ -1785,6 +1657,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SigmaSDK"
+      },
+      {
+        "kind": "Import",
         "name": "CommonCrypto",
         "printedName": "CommonCrypto",
         "declKind": "Import",
@@ -1998,6 +1877,230 @@
                 "declKind": "Func",
                 "usr": "s:8SigmaSDK0A4UserV7BuilderC12setProfileIdyAESSF",
                 "mangledName": "$s8SigmaSDK0A4UserV7BuilderC12setProfileIdyAESSF",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setDeviceId",
+                "printedName": "setDeviceId(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC11setDeviceIdyAESSF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC11setDeviceIdyAESSF",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setAppVersion",
+                "printedName": "setAppVersion(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC13setAppVersionyAESSF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC13setAppVersionyAESSF",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setOsName",
+                "printedName": "setOsName(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC9setOsNameyAESSF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC9setOsNameyAESSF",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setOsVersion",
+                "printedName": "setOsVersion(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC12setOsVersionyAESSF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC12setOsVersionyAESSF",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setGeoCode",
+                "printedName": "setGeoCode(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC10setGeoCodeyAESSF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC10setGeoCodeyAESSF",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setGeoCountry",
+                "printedName": "setGeoCountry(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC13setGeoCountryyAESSF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC13setGeoCountryyAESSF",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setGeoState",
+                "printedName": "setGeoState(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC11setGeoStateyAESSF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC11setGeoStateyAESSF",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "Final",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setGeoCity",
+                "printedName": "setGeoCity(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC10setGeoCityyAESSF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC10setGeoCityyAESSF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -4903,86 +5006,51 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "Array",
-      "offset": 3651,
+      "offset": 3614,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "Dictionary",
-      "offset": 5803,
+      "offset": 4824,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 7710,
+      "offset": 8115,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8303,
-      "length": 12,
-      "value": "\"appVersion\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 8340,
+      "offset": 8579,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8356,
-      "length": 10,
-      "value": "\"deviceId\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 8395,
+      "offset": 8644,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 8411,
-      "length": 12,
-      "value": "\"os.version\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8471,
+      "offset": 8729,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 8490,
-      "length": 9,
-      "value": "\"os.name\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 8530,
-      "length": 6,
-      "value": "\"time\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 8556,
-      "length": 6,
-      "value": "\"date\""
+      "kind": "Dictionary",
+      "offset": 10324,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoRoute.swift",
@@ -5200,6 +5268,118 @@
       "offset": 2579,
       "length": 45,
       "value": "\"URL request succeeded, but returned no data\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 62,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 104,
+      "length": 17,
+      "value": "\"sigmaExpiration\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 149,
+      "length": 11,
+      "value": "\"profileId\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 10,
+      "value": "\"deviceId\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 226,
+      "length": 12,
+      "value": "\"appVersion\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 266,
+      "length": 12,
+      "value": "\"os.version\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 9,
+      "value": "\"os.name\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 342,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 9,
+      "value": "\"country\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 422,
+      "length": 6,
+      "value": "\"city\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 460,
+      "length": 7,
+      "value": "\"state\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 492,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 522,
+      "length": 6,
+      "value": "\"time\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 551,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 605,
+      "length": 6,
+      "value": "\"geo.\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
+      "kind": "StringLiteral",
+      "offset": 670,
+      "length": 9,
+      "value": "\"custom.\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/Extensions\/String+MD5.swift",
@@ -5791,64 +5971,29 @@
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
-      "kind": "StringLiteral",
-      "offset": 93,
-      "length": 8,
-      "value": "\"userId\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
-      "kind": "StringLiteral",
-      "offset": 139,
-      "length": 17,
-      "value": "\"sigmaExpiration\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
-      "kind": "StringLiteral",
-      "offset": 188,
-      "length": 11,
-      "value": "\"profileId\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
-      "kind": "StringLiteral",
-      "offset": 227,
-      "length": 7,
-      "value": "\"email\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
-      "kind": "StringLiteral",
-      "offset": 289,
-      "length": 9,
-      "value": "\"custom.\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
       "kind": "Dictionary",
-      "offset": 1120,
+      "offset": 912,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
       "kind": "IntegerLiteral",
-      "offset": 1313,
+      "offset": 1112,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
       "kind": "IntegerLiteral",
-      "offset": 1318,
+      "offset": 1117,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
       "kind": "IntegerLiteral",
-      "offset": 1323,
+      "offset": 1122,
       "length": 2,
       "value": "60"
     },

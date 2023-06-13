@@ -58,7 +58,15 @@ let user = SigmaUser.Builder()
 
 - `func setUserId(_ id: String) -> SigmaUser.Builder` - назначение ID анонимного пользователя. Используется для раздачи экспериментов и фича-флагов. (если не назначен, то не будет работать сплит экспериментов по userId).
 - `func setProfileId(_ id: String) -> SigmaUser.Builder` - назначение ID авторизованного пользователя (например, в личном кабинете). (если не назначен, то не будет работать сплит экспериментов по profileId).
+- `func setDeviceId(_ id: String) -> SigmaUser.Builder` - переопределение Device ID, определенного SDK.
 - `func setEmail(_ email: String) -> SigmaUser.Builder` - назначение параметра пользователя с названием `email`.
+- `func setAppVersion(_ version: String) -> SigmaUser.Builder` - переопределение версии приложения, определенной SDK.
+- `func setOsName(_ name: String) -> SigmaUser.Builder` - переопределение названия операционной системы, определенной SDK.
+- `func setOsVersion(_ version: String) -> SigmaUser.Builder` - переопределение версии операционной системы, определенной SDK.
+- `func setGeoCode(_ code: String) -> SigmaUser.Builder` - переопределение гео кода, определенного SDK.
+- `func setGeoCountry(_ country: String) -> SigmaUser.Builder` - переопределение страны, определенной SDK.
+- `func setGeoState(_ state: String) -> SigmaUser.Builder` - переопределение региона, определенного SDK.
+- `func setGeoCity(_ code: String) -> SigmaUser.Builder` - переопределение города, определенного SDK.
 - `func setCustomProperty<Value: CustomStringConvertible>(_ value: Value, key: String) -> SigmaUser.Builder` - назначение custom-параметра пользователя (все названия таких параметров имеют префикс custom.).
 
 После создания объекта `SigmaUser`, необходимо вызывать метод инициализации SDK:
@@ -130,22 +138,15 @@ do {
 Для получения всех экспериментов, в которые попал пользователь, используются следующие методы `SigmaClient`:
 
 ```swift
-func getUserExperiments(onSuccess: SigmaSuccessCallback<[SigmaExperiment]>?, onError: SigmaErrorCallback?)
-func getUserExperiments() async throws -> [SigmaExperiment]
+func getAllUserExperiments(onSuccess: SigmaSuccessCallback<[SigmaExperiment]>?, onError: SigmaErrorCallback?)
+func getAllUserExperiments() async throws -> [SigmaExperiment]
 ```
 
 Для получения эксперимента по названию, используются следующие методы `SigmaClient`:
 
 ```swift
-func getUserExperiment(name: String, onSuccess: SigmaSuccessCallback<SigmaExperiment?>?, onError: SigmaErrorCallback?)
-func getUserExperiment(name: String) async throws -> SigmaExperiment?
-```
-
-Для получения названия эксперимента по названию Feature Flag, используются следующие методы `SigmaClient`:
-
-```swift
-func getExperimentNameByFeatureFlag(flagName: String, onSuccess: SigmaSuccessCallback<String?>?, onError: SigmaErrorCallback?)
-func getExperimentNameByFeatureFlag(flagName: String) async throws -> String?
+func getExperiment(name: String, onSuccess: SigmaSuccessCallback<SigmaExperiment?>?, onError: SigmaErrorCallback?)
+func getExperiment(name: String) async throws -> SigmaExperiment?
 ```
 
 Все вышеописанные методы возвращают только те эксперименты, в которые попал пользователь.
@@ -159,7 +160,7 @@ guard let client = Sigma.getClient() else { return }
 let flagName = "my_first_flag"
 
 // Callback версии
-client.getUserExperiments(
+client.getAllUserExperiments(
     onSuccess: { experiments in
         // Обработка всех экспериментов, в которые попал пользователь
     },
@@ -168,7 +169,7 @@ client.getUserExperiments(
     }
 )
 
-client.getUserExperiment(
+client.getExperiment(
     name: "my_first_experiment",
     onSuccess: { experiment in
         // Обработка эксперимента
@@ -178,34 +179,17 @@ client.getUserExperiment(
     }
 )
 
-client.getExperimentNameByFeatureFlag(
-    flagName: "my_first_flag",
-    onSuccess: { experimentName in
-        // Обработка имени эксперимента
-    },
-    onError: { error in
-        // Обработка ошибки
-    }
-)
-
 // Async-await версии
 do {
-    let allExperiments = try await client.getUserExperiments()
+    let allExperiments = try await client.getAllUserExperiments()
     // Обработка всех экспериментов, в которые попал пользователь
 } catch let error {
     // Обработка ошибки
 }
 
 do {
-    let userExperiment = try await client.getUserExperiment(name: "my_first_experiment")
+    let userExperiment = try await client.getExperiment(name: "my_first_experiment")
     // Обработка эксперимента
-} catch let error {
-    // Обработка ошибки
-}
-
-do {
-    let experimentName = try await client.getExperimentNameByFeatureFlag(name: "my_first_flag")
-    // Обработка имени эксперимента
 } catch let error {
     // Обработка ошибки
 }
@@ -234,3 +218,21 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 - `geo.state` - район пользователя.
 - `geo.city` - город пользователя.
 - `geo.ip` - IP-адрес пользователя.
+
+## Changelog
+
+### 1.1.0
+- Удален метод `getExperimentNameByFeatureFlag`.
+- Метод `getUserExperiments` переименован в `getAllUserExperiments`.
+- Метод `getUserExperiment` переименован в `getExperiment`. 
+- Исправлена логика расчета значения Feature Flag, если он есть в эксперименте, но пользователь в него не попал, при которой возвращался nil, вместо fallback на Feature Flag вне эксперимента.
+- Добавлены методы `SigmaUser.Builder`: `setAppVersion`, `setOsName`, `setOsVersion`, `setGeoCode`, `setGeoCountry`, `setGeoState`, `setGeoCity`.
+- Исправлена ошибка, при которой параметры геолокации устанавливались на клиенте как `code`, `country`, `state`, `city` вместо `geo.code`, `geo.country`, `geo.state`, `geo.city`.
+
+
+### 1.0.1
+- Добавлена поддержка iOS 11+.
+- Исправлена ошибка, при которой пустой набор правил с оператором OR считался всегда успешным.
+
+### 1.0.0
+- Начальная версия SDK.
