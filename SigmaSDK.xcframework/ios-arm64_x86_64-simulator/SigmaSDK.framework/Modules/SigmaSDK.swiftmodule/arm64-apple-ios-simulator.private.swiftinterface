@@ -10,9 +10,14 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 public protocol SigmaExperiment {
+  var groupIndex: Swift.Int? { get }
+  @available(*, deprecated, message: "Will be removed in future releases.")
   var name: Swift.String { get }
+  @available(*, deprecated, message: "Will be removed in future releases.")
   var userGroupName: Swift.String? { get }
   func getParamValue<T>(name: Swift.String) -> T? where T : SigmaSDK.SigmaPropertyType
+  func getFeatureValue<T>(flagName: Swift.String) throws -> T? where T : SigmaSDK.SigmaPropertyType
+  @available(*, deprecated, renamed: "getFeatureValue(flagName:)")
   func getFeatureFlagValue<T>(flagName: Swift.String) throws -> T? where T : SigmaSDK.SigmaPropertyType
 }
 public typealias SigmaSuccessCallback<T> = (T) -> Swift.Void

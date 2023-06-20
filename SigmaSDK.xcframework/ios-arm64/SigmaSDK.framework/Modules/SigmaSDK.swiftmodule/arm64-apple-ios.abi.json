@@ -74,6 +74,64 @@
         "children": [
           {
             "kind": "Var",
+            "name": "groupIndex",
+            "printedName": "groupIndex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SigmaSDK0A10ExperimentP10groupIndexSiSgvp",
+            "mangledName": "$s8SigmaSDK0A10ExperimentP10groupIndexSiSgvp",
+            "moduleName": "SigmaSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SigmaSDK0A10ExperimentP10groupIndexSiSgvg",
+                "mangledName": "$s8SigmaSDK0A10ExperimentP10groupIndexSiSgvg",
+                "moduleName": "SigmaSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaExperiment>",
+                "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaExperiment>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [
@@ -88,7 +146,11 @@
             "usr": "s:8SigmaSDK0A10ExperimentP4nameSSvp",
             "mangledName": "$s8SigmaSDK0A10ExperimentP4nameSSvp",
             "moduleName": "SigmaSDK",
+            "deprecated": true,
             "protocolReq": true,
+            "declAttributes": [
+              "Available"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -138,7 +200,11 @@
             "usr": "s:8SigmaSDK0A10ExperimentP13userGroupNameSSSgvp",
             "mangledName": "$s8SigmaSDK0A10ExperimentP13userGroupNameSSSgvp",
             "moduleName": "SigmaSDK",
+            "deprecated": true,
             "protocolReq": true,
+            "declAttributes": [
+              "Available"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -209,6 +275,42 @@
           },
           {
             "kind": "Function",
+            "name": "getFeatureValue",
+            "printedName": "getFeatureValue(flagName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_1_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A10ExperimentP15getFeatureValue8flagNameqd__SgSS_tKAA0A12PropertyTypeRd__lF",
+            "mangledName": "$s8SigmaSDK0A10ExperimentP15getFeatureValue8flagNameqd__SgSS_tKAA0A12PropertyTypeRd__lF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SigmaSDK.SigmaExperiment, τ_1_0 : SigmaSDK.SigmaPropertyType>",
+            "sugared_genericSig": "<Self, T where Self : SigmaSDK.SigmaExperiment, T : SigmaSDK.SigmaPropertyType>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getFeatureFlagValue",
             "printedName": "getFeatureFlagValue(flagName:)",
             "children": [
@@ -238,7 +340,11 @@
             "moduleName": "SigmaSDK",
             "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SigmaSDK.SigmaExperiment, τ_1_0 : SigmaSDK.SigmaPropertyType>",
             "sugared_genericSig": "<Self, T where Self : SigmaSDK.SigmaExperiment, T : SigmaSDK.SigmaPropertyType>",
+            "deprecated": true,
             "protocolReq": true,
+            "declAttributes": [
+              "Available"
+            ],
             "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -4523,14 +4629,14 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaExperimentImpl.swift",
       "kind": "Array",
-      "offset": 1654,
+      "offset": 2133,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaExperimentImpl.swift",
       "kind": "Dictionary",
-      "offset": 1956,
+      "offset": 2437,
       "length": 3,
       "value": "[]"
     },
@@ -4551,35 +4657,35 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1054,
+      "offset": 1059,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1120,
+      "offset": 1125,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1135,
+      "offset": 1140,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1324,
+      "offset": 1329,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1386,
+      "offset": 1391,
       "length": 4,
       "value": "true"
     },
@@ -5013,42 +5119,42 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "Dictionary",
-      "offset": 4824,
+      "offset": 4898,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8115,
+      "offset": 8189,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8579,
+      "offset": 8653,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8644,
+      "offset": 8718,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8729,
+      "offset": 8803,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "Dictionary",
-      "offset": 10324,
+      "offset": 10398,
       "length": 3,
       "value": "[]"
     },
@@ -5720,77 +5826,77 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "BooleanLiteral",
-      "offset": 883,
+      "offset": 914,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "Array",
-      "offset": 1006,
+      "offset": 1089,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 1342,
+      "offset": 1425,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1529,
+      "offset": 1612,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2021,
+      "offset": 2125,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2041,
+      "offset": 2145,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2128,
+      "offset": 2232,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2168,
+      "offset": 2272,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2243,
+      "offset": 2363,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2690,
+      "offset": 2970,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2836,
+      "offset": 3116,
       "length": 1,
       "value": "5"
     },
@@ -5923,28 +6029,28 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
       "kind": "BooleanLiteral",
-      "offset": 2217,
+      "offset": 2238,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
       "kind": "Array",
-      "offset": 2410,
+      "offset": 2431,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
       "kind": "Array",
-      "offset": 3054,
+      "offset": 3075,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
       "kind": "BooleanLiteral",
-      "offset": 3355,
+      "offset": 3376,
       "length": 5,
       "value": "false"
     },

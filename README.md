@@ -221,6 +221,11 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 
 ## Changelog
 
+### 1.2.0
+- Метод `SigmaExperiment.getFeatureFlagValue` переименован в `SigmaExperiment.getFeatureValue`.
+- Свойства `SigmaExperiment.name` и `SigmaExperiment.userGroupName` помечены устаревшими и будут удалены в следующих релизах.
+- Добавлено свойство `SigmaExperiment.groupIndex`, возвращающее индекс группы эксперимента, в которую попал пользователь.
+
 ### 1.1.0
 - Удален метод `getExperimentNameByFeatureFlag`.
 - Метод `getUserExperiments` переименован в `getAllUserExperiments`.
