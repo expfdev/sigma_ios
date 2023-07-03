@@ -4767,6 +4767,48 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2402,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2547,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2688,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2831,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2972,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3114,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionalStatement.swift",
       "kind": "StringLiteral",
       "offset": 79,
@@ -4979,6 +5021,48 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
       "kind": "StringLiteral",
+      "offset": 502,
+      "length": 13,
+      "value": "\"starts with\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 541,
+      "length": 17,
+      "value": "\"not starts with\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 579,
+      "length": 11,
+      "value": "\"ends with\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 15,
+      "value": "\"not ends with\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 10,
+      "value": "\"contains\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 684,
+      "length": 14,
+      "value": "\"not contains\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
       "offset": 74,
       "length": 7,
       "value": "\"equal\""
@@ -5066,6 +5150,48 @@
       "offset": 467,
       "length": 12,
       "value": "\"less equal\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 502,
+      "length": 13,
+      "value": "\"starts with\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 541,
+      "length": 17,
+      "value": "\"not starts with\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 579,
+      "length": 11,
+      "value": "\"ends with\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 15,
+      "value": "\"not ends with\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 10,
+      "value": "\"contains\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
+      "kind": "StringLiteral",
+      "offset": 684,
+      "length": 14,
+      "value": "\"not contains\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/LossyArray.swift",

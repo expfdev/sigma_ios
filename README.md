@@ -221,6 +221,9 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 
 ## Changelog
 
+### 1.2.2
+- Добавлена поддержка новых операторов "starts with", "not starts with", "ends with", "not ends with", "contains", "not contains".
+
 ### 1.2.1
 - Добавлена поддержка фильтрации экспериментов и Feature Flag по платформе.
 - Улучшено декодирование файла конфигурации, при котором поврежденные объекты не будут повреждать весь файл конфигурации.
