@@ -55,6 +55,9 @@ extension Swift.Double : SigmaSDK.SigmaPropertyType {
 extension Swift.String : SigmaSDK.SigmaPropertyType {
   public init?(sigmaString: Swift.String)
 }
+extension Swift.Dictionary : SigmaSDK.SigmaPropertyType where Key == Swift.String, Value == Any {
+  public init?(sigmaString: Swift.String)
+}
 public enum SigmaError : Swift.Error, Swift.CustomStringConvertible {
   case initializationOfExistingClient(tag: Swift.String)
   case requestConfigFailed(SigmaSDK.SigmaNetworkError)

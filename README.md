@@ -103,7 +103,7 @@ func checkFlag<T: SigmaPropertyType>(flagName: String, onSuccess: SigmaSuccessCa
 func checkFlag<T: SigmaPropertyType>(flagName: String) async throws -> T?
 ```
 
-Значение FeatureFlag может быть типа `Bool`, `Int`, `Double` или `String`.
+Значение FeatureFlag может быть типа `Bool`, `Int`, `Double`, `String` или `[String: Any]`.
 
 Пример получения значений Feature Flag:
 ```swift
@@ -204,7 +204,7 @@ func getParamValue<T: SigmaPropertyType>(name: String) -> T?
 func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 ```
 
-Значение FeatureFlag или параметра эксперимента может быть типа `Bool`, `Int`, `Double` или `String`.
+Значение FeatureFlag или параметра эксперимента может быть типа `Bool`, `Int`, `Double`, `String` или `[String: Any]`.
 
 ## Список параметров, автоматически определяющихся на стороне SDK:
 
@@ -220,6 +220,9 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 - `geo.ip` - IP-адрес пользователя.
 
 ## Changelog
+
+### 1.2.3
+- Добавлена поддержка типа [String: Any] как значения Feature Flag или параметра эксперимента.
 
 ### 1.2.2
 - Добавлена поддержка новых операторов "starts with", "not starts with", "ends with", "not ends with", "contains", "not contains".
