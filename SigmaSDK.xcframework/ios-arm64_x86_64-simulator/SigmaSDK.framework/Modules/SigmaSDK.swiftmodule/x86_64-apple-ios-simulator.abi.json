@@ -6338,63 +6338,63 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 1416,
+      "offset": 1421,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1603,
+      "offset": 1647,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2116,
+      "offset": 2160,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2136,
+      "offset": 2180,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2223,
+      "offset": 2267,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2263,
+      "offset": 2307,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2354,
+      "offset": 2398,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2961,
+      "offset": 3005,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3107,
+      "offset": 3151,
       "length": 1,
       "value": "5"
     },
@@ -6943,6 +6943,13 @@
       "offset": 325,
       "length": 1,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
+      "kind": "IntegerLiteral",
+      "offset": 665,
+      "length": 2,
+      "value": "10"
     }
   ]
 }

@@ -221,6 +221,9 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 
 ## Changelog
 
+### 1.2.4
+- Улучшена логика подсчета попадания пользователя в эксперимент.
+
 ### 1.2.3
 - Добавлена поддержка типа [String: Any] как значения Feature Flag или параметра эксперимента.
 

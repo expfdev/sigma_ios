@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DbbwqN/fFrbPLY+L4la7GNkSle8=
+		hBinfstKnMIokVEX6Km5j3xeN7o=
 		</data>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5O+qWnJMb2Ypell8G0BoejfQBYs=
+		r0dWxQ2kVQnw1IZp1dLs1kK7TeY=
 		</data>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/SigmaSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5O+qWnJMb2Ypell8G0BoejfQBYs=
+		r0dWxQ2kVQnw1IZp1dLs1kK7TeY=
 		</data>
 		<key>Modules/SigmaSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UTpabmr+rf4UyKkbOW5DixqQASFCZSu5zdOEJgcfvmU=
+			48X+FklsojA1s3s/p1wuYYvfVonhbNQlb48stsUVt5I=
 			</data>
 		</dict>
 		<key>Modules/SigmaSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UTpabmr+rf4UyKkbOW5DixqQASFCZSu5zdOEJgcfvmU=
+			48X+FklsojA1s3s/p1wuYYvfVonhbNQlb48stsUVt5I=
 			</data>
 		</dict>
 		<key>Modules/SigmaSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
