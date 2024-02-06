@@ -5043,28 +5043,35 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 991,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1062,
+      "offset": 968,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1251,
+      "offset": 1058,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1313,
+      "offset": 1129,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1318,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1380,
       "length": 4,
       "value": "true"
     },
