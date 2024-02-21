@@ -94,6 +94,14 @@ do {
 
 При инициализации уже инициализированного клиента (с уже существующим тегом) будет выброшена ошибка `SigmaError.initializationOfExistingClient`.
 
+### Обновление информации о пользователе
+
+Доступ к `SigmaClient` позволяет обновить параметры объекта `SigmaUser`, принадлежащего клиенту. `SigmaClient` обладает следующими методами:
+
+- `func setUserProperties(builder: (SigmaUser.Builder) -> SigmaUser.Builder)` - переназначение всех свойств пользователя. Ранее объявленные свойства пользователя будут удалены.
+- `func editUserProperties(builder: (SigmaUser.Builder) -> SigmaUser.Builder)` - обновление свойств пользователя. Ранее объявленные свойства не будут удалены, но их значения могут быть перезаписаны с помощью блока `builder`.
+- `func clearUserProperties()` - удаление всех свойств пользователя. Эквивалентно созданию нового пользователя без параметров.
+
 ### Получение значений Feature Flag
 
 Для получения значений Feature Flag используются следующие методы `SigmaClient`:
@@ -220,6 +228,9 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 - `geo.ip` - IP-адрес пользователя.
 
 ## Changelog
+
+### 1.3.0
+- Добавлены методы `SigmaClient.setUserProperties`, `SigmaClient.editUserProperties`, `SigmaClient.clearUserProperties`, позволяющие редактировать информацию о `SigmaUser`.
 
 ### 1.2.5
 - Улучшена логика работы принудительного списка пользователей эксперимента: теперь он приоритетнее целевой аудитории в эксперименте.

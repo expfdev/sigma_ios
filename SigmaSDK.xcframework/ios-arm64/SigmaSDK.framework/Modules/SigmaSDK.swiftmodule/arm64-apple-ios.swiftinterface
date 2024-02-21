@@ -25,6 +25,9 @@ public typealias SigmaSuccessCallback<T> = (T) -> Swift.Void
 public typealias SigmaErrorCallback = (SigmaSDK.SigmaError) -> Swift.Void
 public protocol SigmaClient {
   func setUser(_ user: SigmaSDK.SigmaUser)
+  func setUserProperties(builder: (SigmaSDK.SigmaUser.Builder) -> SigmaSDK.SigmaUser.Builder)
+  func editUserProperties(builder: (SigmaSDK.SigmaUser.Builder) -> SigmaSDK.SigmaUser.Builder)
+  func clearUserProperties()
   func checkFlag<T>(flagName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<T?>?, onError: SigmaSDK.SigmaErrorCallback?) where T : SigmaSDK.SigmaPropertyType
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
@@ -87,7 +90,7 @@ public struct SigmaUser : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension SigmaSDK.SigmaUser {
-  final public class Builder {
+  @_hasMissingDesignatedInitializers final public class Builder {
     public init()
     final public func setUserId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder
     final public func setProfileId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder

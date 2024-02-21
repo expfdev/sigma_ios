@@ -427,6 +427,113 @@
           },
           {
             "kind": "Function",
+            "name": "setUserProperties",
+            "printedName": "setUserProperties(builder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SigmaSDK.SigmaUser.Builder) -> SigmaSDK.SigmaUser.Builder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP17setUserProperties7builderyAA0aE0V7BuilderCAIXE_tF",
+            "mangledName": "$s8SigmaSDK0A6ClientP17setUserProperties7builderyAA0aE0V7BuilderCAIXE_tF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "editUserProperties",
+            "printedName": "editUserProperties(builder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SigmaSDK.SigmaUser.Builder) -> SigmaSDK.SigmaUser.Builder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "SigmaSDK.SigmaUser.Builder",
+                    "usr": "s:8SigmaSDK0A4UserV7BuilderC"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP18editUserProperties7builderyAA0aE0V7BuilderCAIXE_tF",
+            "mangledName": "$s8SigmaSDK0A6ClientP18editUserProperties7builderyAA0aE0V7BuilderCAIXE_tF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearUserProperties",
+            "printedName": "clearUserProperties()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP19clearUserPropertiesyyF",
+            "mangledName": "$s8SigmaSDK0A6ClientP19clearUserPropertiesyyF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "checkFlag",
             "printedName": "checkFlag(flagName:onSuccess:onError:)",
             "children": [
@@ -2315,7 +2422,8 @@
               "Final",
               "AccessControl"
             ],
-            "isFromExtension": true
+            "isFromExtension": true,
+            "hasMissingDesignatedInitializers": true
           }
         ],
         "declKind": "Struct",
@@ -5631,42 +5739,42 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "Dictionary",
-      "offset": 4890,
+      "offset": 5285,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8161,
+      "offset": 8556,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8637,
+      "offset": 9032,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8702,
+      "offset": 9097,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8787,
+      "offset": 9182,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
       "kind": "Dictionary",
-      "offset": 10455,
+      "offset": 10850,
       "length": 3,
       "value": "[]"
     },
@@ -6618,28 +6726,28 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
       "kind": "Dictionary",
-      "offset": 912,
+      "offset": 948,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
       "kind": "IntegerLiteral",
-      "offset": 1112,
+      "offset": 1201,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
       "kind": "IntegerLiteral",
-      "offset": 1117,
+      "offset": 1206,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
       "kind": "IntegerLiteral",
-      "offset": 1122,
+      "offset": 1211,
       "length": 2,
       "value": "60"
     },
