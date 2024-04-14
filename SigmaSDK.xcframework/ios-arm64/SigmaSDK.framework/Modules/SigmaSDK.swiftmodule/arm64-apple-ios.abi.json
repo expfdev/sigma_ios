@@ -671,12 +671,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(([SigmaSDK.SigmaExperiment]) -> ())?",
+                "printedName": "(([any SigmaSDK.SigmaExperiment]) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "([SigmaSDK.SigmaExperiment]) -> ()",
+                    "printedName": "([any SigmaSDK.SigmaExperiment]) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -686,12 +686,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[SigmaSDK.SigmaExperiment]",
+                        "printedName": "[any SigmaSDK.SigmaExperiment]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "SigmaExperiment",
-                            "printedName": "SigmaSDK.SigmaExperiment",
+                            "printedName": "any SigmaSDK.SigmaExperiment",
                             "usr": "s:8SigmaSDK0A10ExperimentP"
                           }
                         ],
@@ -747,12 +747,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[SigmaSDK.SigmaExperiment]",
+                "printedName": "[any SigmaSDK.SigmaExperiment]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "SigmaExperiment",
-                    "printedName": "SigmaSDK.SigmaExperiment",
+                    "printedName": "any SigmaSDK.SigmaExperiment",
                     "usr": "s:8SigmaSDK0A10ExperimentP"
                   }
                 ],
@@ -793,12 +793,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((SigmaSDK.SigmaExperiment?) -> ())?",
+                "printedName": "(((any SigmaSDK.SigmaExperiment)?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(SigmaSDK.SigmaExperiment?) -> ()",
+                    "printedName": "((any SigmaSDK.SigmaExperiment)?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -808,12 +808,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "SigmaSDK.SigmaExperiment?",
+                        "printedName": "(any SigmaSDK.SigmaExperiment)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "SigmaExperiment",
-                            "printedName": "SigmaSDK.SigmaExperiment",
+                            "printedName": "any SigmaSDK.SigmaExperiment",
                             "usr": "s:8SigmaSDK0A10ExperimentP"
                           }
                         ],
@@ -869,12 +869,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "SigmaSDK.SigmaExperiment?",
+                "printedName": "(any SigmaSDK.SigmaExperiment)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "SigmaExperiment",
-                    "printedName": "SigmaSDK.SigmaExperiment",
+                    "printedName": "any SigmaSDK.SigmaExperiment",
                     "usr": "s:8SigmaSDK0A10ExperimentP"
                   }
                 ],
@@ -1568,18 +1568,68 @@
         "children": [
           {
             "kind": "Var",
+            "name": "incorrectURL",
+            "printedName": "incorrectURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SigmaSDK.SigmaNetworkError.Type) -> (Swift.String) -> SigmaSDK.SigmaNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SigmaSDK.SigmaNetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaNetworkError",
+                        "printedName": "SigmaSDK.SigmaNetworkError",
+                        "usr": "s:8SigmaSDK0A12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SigmaSDK.SigmaNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaNetworkError",
+                        "printedName": "SigmaSDK.SigmaNetworkError",
+                        "usr": "s:8SigmaSDK0A12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SigmaSDK0A12NetworkErrorO12incorrectURLyACSScACmF",
+            "mangledName": "$s8SigmaSDK0A12NetworkErrorO12incorrectURLyACSScACmF",
+            "moduleName": "SigmaSDK"
+          },
+          {
+            "kind": "Var",
             "name": "urlError",
             "printedName": "urlError",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(SigmaSDK.SigmaNetworkError.Type) -> (Swift.Error) -> SigmaSDK.SigmaNetworkError",
+                "printedName": "(SigmaSDK.SigmaNetworkError.Type) -> (any Swift.Error) -> SigmaSDK.SigmaNetworkError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> SigmaSDK.SigmaNetworkError",
+                    "printedName": "(any Swift.Error) -> SigmaSDK.SigmaNetworkError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1590,7 +1640,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -1674,12 +1724,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(SigmaSDK.SigmaNetworkError.Type) -> (Swift.Error) -> SigmaSDK.SigmaNetworkError",
+                "printedName": "(SigmaSDK.SigmaNetworkError.Type) -> (any Swift.Error) -> SigmaSDK.SigmaNetworkError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> SigmaSDK.SigmaNetworkError",
+                    "printedName": "(any Swift.Error) -> SigmaSDK.SigmaNetworkError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1690,7 +1740,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -1985,7 +2035,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -2010,7 +2060,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -2575,12 +2625,12 @@
           {
             "kind": "Function",
             "name": "initializeClient",
-            "printedName": "initializeClient(projectToken:initialUser:cacheTTL:retryCount:tag:)",
+            "printedName": "initializeClient(projectToken:initialUser:apiURL:cacheTTL:retryCount:tag:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "SigmaClient",
-                "printedName": "SigmaSDK.SigmaClient",
+                "printedName": "any SigmaSDK.SigmaClient",
                 "usr": "s:8SigmaSDK0A6ClientP"
               },
               {
@@ -2606,6 +2656,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "UInt",
                 "printedName": "Swift.UInt",
                 "hasDefaultArg": true,
@@ -2627,8 +2684,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SigmaSDK0A0O16initializeClient12projectToken11initialUser8cacheTTL10retryCount3tagAA0aD0_pSS_AA0aH0VSgS2uSStKFZ",
-            "mangledName": "$s8SigmaSDK0A0O16initializeClient12projectToken11initialUser8cacheTTL10retryCount3tagAA0aD0_pSS_AA0aH0VSgS2uSStKFZ",
+            "usr": "s:8SigmaSDK0A0O16initializeClient12projectToken11initialUser6apiURL8cacheTTL10retryCount3tagAA0aD0_pSS_AA0aH0VSgSSS2uSStKFZ",
+            "mangledName": "$s8SigmaSDK0A0O16initializeClient12projectToken11initialUser6apiURL8cacheTTL10retryCount3tagAA0aD0_pSS_AA0aH0VSgSSS2uSStKFZ",
             "moduleName": "SigmaSDK",
             "static": true,
             "declAttributes": [
@@ -2645,12 +2702,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "SigmaSDK.SigmaClient?",
+                "printedName": "(any SigmaSDK.SigmaClient)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "SigmaClient",
-                    "printedName": "SigmaSDK.SigmaClient",
+                    "printedName": "any SigmaSDK.SigmaClient",
                     "usr": "s:8SigmaSDK0A6ClientP"
                   }
                 ],
@@ -3939,6 +3996,7 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -4534,6 +4592,7 @@
         "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
         "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -4848,55 +4907,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyCodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 379,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyCodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1967,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyCodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2008,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyCodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2562,
-      "length": 39,
-      "value": "\"AnyCodable(\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyCodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2599,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyCodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2638,
-      "length": 28,
-      "value": "\"AnyCodable(\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyCodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2664,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Group.swift",
       "kind": "StringLiteral",
       "offset": 171,
@@ -4909,48 +4919,20 @@
       "offset": 171,
       "length": 18,
       "value": "\"forced_user_list\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Group.swift",
-      "kind": "Array",
-      "offset": 742,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/ConfigNetworkRoute.swift",
       "kind": "StringLiteral",
       "offset": 121,
-      "length": 21,
-      "value": "\"https:\/\/api.expf.ru\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/ConfigNetworkRoute.swift",
-      "kind": "StringLiteral",
-      "offset": 166,
-      "length": 20,
-      "value": "\"api\/v1\/config.json\""
+      "length": 13,
+      "value": "\"config.json\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/ConfigNetworkRoute.swift",
       "kind": "Array",
-      "offset": 253,
+      "offset": 201,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/ConfigNetworkRoute.swift",
-      "kind": "StringLiteral",
-      "offset": 331,
-      "length": 7,
-      "value": "\"token\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/ConfigNetworkRoute.swift",
-      "kind": "StringLiteral",
-      "offset": 359,
-      "length": 9,
-      "value": "\"user-id\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/FeatureFlagGroup.swift",
@@ -4965,13 +4947,6 @@
       "offset": 115,
       "length": 7,
       "value": "\"group\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/FeatureFlagGroup.swift",
-      "kind": "Array",
-      "offset": 473,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/SplitMode.swift",
@@ -5070,230 +5045,6 @@
       "offset": 192,
       "length": 23,
       "value": "\"conditional_statement\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1134,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
-      "kind": "StringLiteral",
-      "offset": 1144,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1243,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
-      "kind": "StringLiteral",
-      "offset": 1252,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1701,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
-      "kind": "StringLiteral",
-      "offset": 1711,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1810,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
-      "kind": "StringLiteral",
-      "offset": 1819,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaExperimentImpl.swift",
-      "kind": "Dictionary",
-      "offset": 2429,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
-      "kind": "Array",
-      "offset": 777,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 900,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 968,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1058,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1129,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1318,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/ExperimentProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1380,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 240,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 299,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1082,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1195,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1323,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1506,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1692,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1879,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2074,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2267,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2402,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2547,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2688,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2831,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2972,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/PropertyComparator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3114,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionalStatement.swift",
@@ -5366,55 +5117,6 @@
       "value": "\"sigmaPrivateId\""
     },
     {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/StorageClient.swift",
-      "kind": "StringLiteral",
-      "offset": 615,
-      "length": 30,
-      "value": "\"storage\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/StorageClient.swift",
-      "kind": "StringLiteral",
-      "offset": 629,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/StorageClient.swift",
-      "kind": "StringLiteral",
-      "offset": 644,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/StorageClient.swift",
-      "kind": "StringLiteral",
-      "offset": 1912,
-      "length": 8,
-      "value": "\".value\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/StorageClient.swift",
-      "kind": "StringLiteral",
-      "offset": 1969,
-      "length": 14,
-      "value": "\".update_time\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/StorageClient.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2704,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/StorageClient.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2846,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
       "kind": "StringLiteral",
       "offset": 74,
@@ -5681,13 +5383,6 @@
       "value": "\"not contains\""
     },
     {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/LossyArray.swift",
-      "kind": "Array",
-      "offset": 634,
-      "length": 2,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Condition.swift",
       "kind": "StringLiteral",
       "offset": 151,
@@ -5714,286 +5409,20 @@
       "offset": 190,
       "length": 7,
       "value": "\"value\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 653,
-      "length": 64,
-      "value": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "IntegerLiteral",
-      "offset": 750,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "IntegerLiteral",
-      "offset": 754,
-      "length": 2,
-      "value": "80"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "Dictionary",
-      "offset": 5285,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8556,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 9032,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 9097,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9182,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/SigmaClientImpl.swift",
-      "kind": "Dictionary",
-      "offset": 10850,
-      "length": 3,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoRoute.swift",
       "kind": "StringLiteral",
       "offset": 111,
-      "length": 21,
-      "value": "\"https:\/\/api.expf.ru\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoRoute.swift",
-      "kind": "StringLiteral",
-      "offset": 156,
-      "length": 12,
-      "value": "\"api\/v1\/geo\""
+      "length": 5,
+      "value": "\"geo\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoRoute.swift",
       "kind": "Array",
-      "offset": 235,
+      "offset": 183,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoRoute.swift",
-      "kind": "StringLiteral",
-      "offset": 313,
-      "length": 7,
-      "value": "\"token\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoRoute.swift",
-      "kind": "StringLiteral",
-      "offset": 341,
-      "length": 9,
-      "value": "\"user-id\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 711,
-      "length": 57,
-      "value": "\"Sigma client with tag \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 742,
-      "length": 1,
-      "value": "\"\" is already initialized\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 834,
-      "length": 62,
-      "value": "\"Sigma config request failed with error: \""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 895,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 964,
-      "length": 64,
-      "value": "\"Sigma location request failed with error: \""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1027,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1100,
-      "length": 59,
-      "value": "\"Sigma feature flag with name \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1146,
-      "length": 1,
-      "value": "\"\" not found\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1230,
-      "length": 68,
-      "value": "\"Sigma feature flag with name \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1276,
-      "length": 1,
-      "value": "\"\" doesn't have rules\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1379,
-      "length": 78,
-      "value": "\"Sigma feature flag with name \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1425,
-      "length": 1,
-      "value": "\"\" doesn't have rules satisfied\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1527,
-      "length": 56,
-      "value": "\"Sigma experiment with name \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1570,
-      "length": 1,
-      "value": "\"\" not found\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1720,
-      "length": 174,
-      "value": "\"Sigma experiment with name \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1763,
-      "length": 1,
-      "value": "\"\" and user group \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1795,
-      "length": 1,
-      "value": "\"\" doesn't match any group in feature flag \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1854,
-      "length": 1,
-      "value": "\"\" with groups \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 1891,
-      "length": 1,
-      "value": "\"\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 2222,
-      "length": 55,
-      "value": "\"URL request failed with \""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 2276,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 2338,
-      "length": 45,
-      "value": "\"URL request failed with status code \""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 2382,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 2443,
-      "length": 94,
-      "value": "\"URL request succeeded, but response decoding failed with error \""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 2536,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaError.swift",
-      "kind": "StringLiteral",
-      "offset": 2579,
-      "length": 45,
-      "value": "\"URL request succeeded, but returned no data\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
@@ -6094,41 +5523,6 @@
       "value": "\"date\""
     },
     {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
-      "kind": "StringLiteral",
-      "offset": 605,
-      "length": 6,
-      "value": "\"geo.\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/PropertyKey.swift",
-      "kind": "StringLiteral",
-      "offset": 670,
-      "length": 9,
-      "value": "\"custom.\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/Extensions\/String+MD5.swift",
-      "kind": "StringLiteral",
-      "offset": 208,
-      "length": 8,
-      "value": "\"%02hhx\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/Extensions\/String+MD5.swift",
-      "kind": "IntegerLiteral",
-      "offset": 949,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/Extensions\/String+MD5.swift",
-      "kind": "StringLiteral",
-      "offset": 1034,
-      "length": 8,
-      "value": "\"%02hhx\""
-    },
-    {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
       "kind": "StringLiteral",
       "offset": 121,
@@ -6141,272 +5535,6 @@
       "offset": 121,
       "length": 23,
       "value": "\"conditional_statement\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "BooleanLiteral",
-      "offset": 469,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "BooleanLiteral",
-      "offset": 746,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1042,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "StringLiteral",
-      "offset": 1052,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1151,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "StringLiteral",
-      "offset": 1160,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1609,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "StringLiteral",
-      "offset": 1619,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1718,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Target.swift",
-      "kind": "StringLiteral",
-      "offset": 1727,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 1293,
-      "length": 38,
-      "value": "\"AnyDecodable value cannot be decoded\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyDecodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1566,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyDecodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2891,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3449,
-      "length": 41,
-      "value": "\"AnyDecodable(\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3488,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3527,
-      "length": 30,
-      "value": "\"AnyDecodable(\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyDecodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3555,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2217,
-      "length": 38,
-      "value": "\"AnyEncodable value cannot be encoded\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2531,
-      "length": 3,
-      "value": "\"B\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2602,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2673,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2745,
-      "length": 3,
-      "value": "\"i\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2750,
-      "length": 3,
-      "value": "\"l\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2822,
-      "length": 3,
-      "value": "\"q\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2894,
-      "length": 3,
-      "value": "\"C\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 2966,
-      "length": 3,
-      "value": "\"S\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3039,
-      "length": 3,
-      "value": "\"I\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3044,
-      "length": 3,
-      "value": "\"L\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3117,
-      "length": 3,
-      "value": "\"Q\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3190,
-      "length": 3,
-      "value": "\"f\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3262,
-      "length": 3,
-      "value": "\"d\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 3439,
-      "length": 60,
-      "value": "\"NSNumber cannot be encoded because its type is not handled\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3777,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5102,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 5660,
-      "length": 41,
-      "value": "\"AnyEncodable(\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 5699,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 5738,
-      "length": 30,
-      "value": "\"AnyEncodable(\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/AnyCodable\/AnyEncodable.swift",
-      "kind": "StringLiteral",
-      "offset": 5766,
-      "length": 1,
-      "value": "\")\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
@@ -6444,76 +5572,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "Array",
-      "offset": 1080,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1421,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1647,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2160,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2180,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2267,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2307,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2398,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3005,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/SaltCalculator.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3151,
-      "length": 1,
-      "value": "5"
-    },
-    {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/FeatureFlag.swift",
       "kind": "StringLiteral",
       "offset": 131,
@@ -6540,34 +5598,6 @@
       "offset": 244,
       "length": 12,
       "value": "\"is_private\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/FeatureFlag.swift",
-      "kind": "Array",
-      "offset": 1003,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/FeatureFlag.swift",
-      "kind": "Array",
-      "offset": 1098,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/Extensions\/KeyedDecodingContainer+DecodeDoubleOrString.swift",
-      "kind": "StringLiteral",
-      "offset": 595,
-      "length": 64,
-      "value": "\"Expected Double value, but got String value \"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/Extensions\/KeyedDecodingContainer+DecodeDoubleOrString.swift",
-      "kind": "StringLiteral",
-      "offset": 656,
-      "length": 1,
-      "value": "\"\"\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
@@ -6652,55 +5682,6 @@
       "offset": 458,
       "length": 10,
       "value": "\"split_by\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
-      "kind": "Array",
-      "offset": 1559,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
-      "kind": "Array",
-      "offset": 1643,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
-      "kind": "Array",
-      "offset": 1727,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
-      "kind": "Array",
-      "offset": 1908,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
-      "kind": "Array",
-      "offset": 2009,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2497,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Experiment.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3601,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/DateFormatter.swift",
@@ -6724,41 +5705,6 @@
       "value": "\"yyyy-MM-dd\""
     },
     {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
-      "kind": "Dictionary",
-      "offset": 948,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1201,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1206,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1211,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Param.swift",
-      "kind": "Array",
-      "offset": 623,
-      "length": 2,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConfigResponse.swift",
       "kind": "StringLiteral",
       "offset": 121,
@@ -6771,104 +5717,6 @@
       "offset": 121,
       "length": 15,
       "value": "\"feature_flags\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConfigResponse.swift",
-      "kind": "Array",
-      "offset": 502,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConfigResponse.swift",
-      "kind": "Array",
-      "offset": 601,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConfigResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 883,
-      "length": 5,
-      "value": "\"all\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConfigResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 890,
-      "length": 5,
-      "value": "\"ios\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 453,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 603,
-      "length": 73,
-      "value": "\"Cannot build an URL object from string \""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 658,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 675,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 1499,
-      "length": 13,
-      "value": "\"sdk-version\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 1540,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1883,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1889,
-      "length": 3,
-      "value": "299"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3097,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkClient.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3300,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/NetworkRoute.swift",
@@ -6913,125 +5761,6 @@
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "StringLiteral",
-      "offset": 1229,
-      "length": 3,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "StringLiteral",
-      "offset": 1274,
-      "length": 3,
-      "value": "\"0\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1282,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1319,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1338,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1345,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1349,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1387,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1406,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1413,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1417,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "StringLiteral",
-      "offset": 1502,
-      "length": 19,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "StringLiteral",
-      "offset": 1511,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "StringLiteral",
-      "offset": 1520,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1559,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "StringLiteral",
-      "offset": 1586,
-      "length": 11,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-iOS\/OS.swift",
-      "kind": "StringLiteral",
-      "offset": 1596,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
       "kind": "StringLiteral",
       "offset": 88,
@@ -7047,24 +5776,24 @@
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
-      "kind": "IntegerLiteral",
+      "kind": "StringLiteral",
       "offset": 294,
+      "length": 29,
+      "value": "\"https:\/\/api.expf.ru\/api\/v1\/\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
+      "kind": "IntegerLiteral",
+      "offset": 350,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
       "kind": "IntegerLiteral",
-      "offset": 325,
+      "offset": 381,
       "length": 1,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
-      "kind": "IntegerLiteral",
-      "offset": 665,
-      "length": 2,
-      "value": "10"
     }
   ]
 }

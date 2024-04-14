@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SigmaSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SigmaSDK
 import CommonCrypto
 import CryptoKit
 import Foundation
@@ -76,6 +75,7 @@ public enum SigmaError : Swift.Error, Swift.CustomStringConvertible {
   }
 }
 public enum SigmaNetworkError : Swift.Error, Swift.CustomStringConvertible {
+  case incorrectURL(Swift.String)
   case urlError(any Swift.Error)
   case wrongStatusCode(Swift.Int)
   case decodingError(any Swift.Error)
@@ -110,7 +110,7 @@ extension SigmaSDK.SigmaUser {
 }
 public enum Sigma {
   public static let defaultClientTag: Swift.String
-  public static func initializeClient(projectToken: Swift.String, initialUser: SigmaSDK.SigmaUser? = nil, cacheTTL: Swift.UInt = 10, retryCount: Swift.UInt = 3, tag: Swift.String = Sigma.defaultClientTag) throws -> any SigmaSDK.SigmaClient
+  public static func initializeClient(projectToken: Swift.String, initialUser: SigmaSDK.SigmaUser? = nil, apiURL: Swift.String = "https://api.expf.ru/api/v1/", cacheTTL: Swift.UInt = 10, retryCount: Swift.UInt = 3, tag: Swift.String = Sigma.defaultClientTag) throws -> any SigmaSDK.SigmaClient
   public static func getClient(tag: Swift.String = Sigma.defaultClientTag) -> (any SigmaSDK.SigmaClient)?
   public static func removeClient(tag: Swift.String = Sigma.defaultClientTag)
 }

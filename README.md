@@ -85,6 +85,7 @@ do {
 
 - `projectToken: String` - токен проекта (указан в панели управления).
 - `initialUser: SigmaUser?` - Объект `SigmaUser`. Необязательный параметр. При отсутствии, SDK автоматически создаст объект `SigmaUser`, сгенерировав ему случайный идентификатор.
+- `apiURL: String` - URL для Sigma API. Необязательный параметр. По умолчанию равен "https://api.expf.ru/api/v1/".
 - `cacheTTL: UInt` - частота (в секундах) запрашивания конфигурации из сети. Необязательный параметр. По умолчанию равен 10 секундам.
 - `retryCount: UInt` -  количество повторных попыток запрашивания конфигурации при неудачном запросе. Необязательный параметр. По умолчанию равен 3.
 - `tag: String` - тег клиента Sigma. Необязательный параметр. По умолчанию равен "default". Необходим для создания нескольких экземпляров SigmaClient.
@@ -228,6 +229,9 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 - `geo.ip` - IP-адрес пользователя.
 
 ## Changelog
+
+### 1.3.1
+- Добавлена возможность кастомизации URL для Sigma API с помощью метода `Sigma.initializeClient`: добавлен новый параметр `apiURL`.
 
 ### 1.3.0
 - Добавлены методы `SigmaClient.setUserProperties`, `SigmaClient.editUserProperties`, `SigmaClient.clearUserProperties`, позволяющие редактировать информацию о `SigmaUser`.
