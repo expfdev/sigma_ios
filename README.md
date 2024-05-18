@@ -230,6 +230,9 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 
 ## Changelog
 
+### 1.3.2
+- Усовершенствован механизм проверки актуальности свойств `SigmaUser`. Каждое свойство пользователя считается актуальным только в течение 24 часов после его назначения / изменения.
+
 ### 1.3.1
 - Добавлена возможность кастомизации URL для Sigma API с помощью метода `Sigma.initializeClient`: добавлен новый параметр `apiURL`.
 

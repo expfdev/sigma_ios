@@ -2111,14 +2111,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC03setC2IdyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC03setC2IdyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC03setC2IdyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC03setC2IdyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2139,14 +2147,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC12setProfileIdyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC12setProfileIdyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC12setProfileIdyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC12setProfileIdyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2167,14 +2183,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC11setDeviceIdyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC11setDeviceIdyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC11setDeviceIdyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC11setDeviceIdyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2195,14 +2219,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC13setAppVersionyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC13setAppVersionyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC13setAppVersionyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC13setAppVersionyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2223,14 +2255,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC9setOsNameyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC9setOsNameyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC9setOsNameyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC9setOsNameyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2251,14 +2291,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC12setOsVersionyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC12setOsVersionyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC12setOsVersionyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC12setOsVersionyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2279,14 +2327,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC10setGeoCodeyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC10setGeoCodeyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC10setGeoCodeyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC10setGeoCodeyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2307,14 +2363,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC13setGeoCountryyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC13setGeoCountryyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC13setGeoCountryyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC13setGeoCountryyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2335,14 +2399,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC11setGeoStateyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC11setGeoStateyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC11setGeoStateyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC11setGeoStateyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2363,14 +2435,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC10setGeoCityyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC10setGeoCityyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC10setGeoCityyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC10setGeoCityyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2391,14 +2471,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC8setEmailyAESSF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC8setEmailyAESSF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC8setEmailyAESSSgF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC8setEmailyAESSSgF",
                 "moduleName": "SigmaSDK",
                 "declAttributes": [
                   "Final",
@@ -2419,8 +2507,16 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   },
                   {
                     "kind": "TypeNominal",
@@ -2430,8 +2526,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SigmaSDK0A4UserV7BuilderC17setCustomProperty_3keyAEx_SSts0F17StringConvertibleRzlF",
-                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC17setCustomProperty_3keyAEx_SSts0F17StringConvertibleRzlF",
+                "usr": "s:8SigmaSDK0A4UserV7BuilderC17setCustomProperty_3keyAExSg_SSts0F17StringConvertibleRzlF",
+                "mangledName": "$s8SigmaSDK0A4UserV7BuilderC17setCustomProperty_3keyAExSg_SSts0F17StringConvertibleRzlF",
                 "moduleName": "SigmaSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : Swift.CustomStringConvertible>",
                 "sugared_genericSig": "<Value where Value : Swift.CustomStringConvertible>",
@@ -5703,6 +5799,13 @@
       "offset": 530,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/SigmaUser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1757,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConfigResponse.swift",

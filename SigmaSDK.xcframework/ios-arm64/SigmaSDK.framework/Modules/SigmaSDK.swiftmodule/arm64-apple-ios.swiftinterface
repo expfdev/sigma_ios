@@ -92,18 +92,18 @@ public struct SigmaUser : Swift.Codable {
 extension SigmaSDK.SigmaUser {
   @_hasMissingDesignatedInitializers final public class Builder {
     public init()
-    final public func setUserId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setProfileId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setDeviceId(_ id: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setAppVersion(_ version: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setOsName(_ name: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setOsVersion(_ version: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setGeoCode(_ code: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setGeoCountry(_ country: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setGeoState(_ state: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setGeoCity(_ city: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setEmail(_ email: Swift.String) -> SigmaSDK.SigmaUser.Builder
-    final public func setCustomProperty<Value>(_ value: Value, key: Swift.String) -> SigmaSDK.SigmaUser.Builder where Value : Swift.CustomStringConvertible
+    final public func setUserId(_ id: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setProfileId(_ id: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setDeviceId(_ id: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setAppVersion(_ version: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setOsName(_ name: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setOsVersion(_ version: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setGeoCode(_ code: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setGeoCountry(_ country: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setGeoState(_ state: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setGeoCity(_ city: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setEmail(_ email: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    final public func setCustomProperty<Value>(_ value: Value?, key: Swift.String) -> SigmaSDK.SigmaUser.Builder where Value : Swift.CustomStringConvertible
     final public func build() -> SigmaSDK.SigmaUser
     @objc deinit
   }
