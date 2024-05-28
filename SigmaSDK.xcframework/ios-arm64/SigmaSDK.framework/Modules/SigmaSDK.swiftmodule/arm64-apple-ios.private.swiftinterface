@@ -32,6 +32,11 @@ public protocol SigmaClient {
   @available(iOS 13, *)
   func checkFlag<T>(flagName: Swift.String) async throws -> T? where T : SigmaSDK.SigmaPropertyType
   #endif
+  func getUserFeatureFlagsDetails(onSuccess: SigmaSDK.SigmaSuccessCallback<[Swift.String : any SigmaSDK.SigmaPropertyType]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  func getUserFeatureFlagsDetails() async throws -> [Swift.String : any SigmaSDK.SigmaPropertyType]
+  #endif
   func getAllUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<[any SigmaSDK.SigmaExperiment]>?, onError: SigmaSDK.SigmaErrorCallback?)
   #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
