@@ -1036,6 +1036,462 @@
             "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "includeForce",
+            "printedName": "includeForce(experimentName:groupIndex:onSuccess:onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((()) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(()) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SigmaSDK.SigmaError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SigmaSDK.SigmaError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP12includeForce14experimentName10groupIndex9onSuccess0J5ErrorySS_SiSgyyt_tcSgyAA0aL0OcSgtF",
+            "mangledName": "$s8SigmaSDK0A6ClientP12includeForce14experimentName10groupIndex9onSuccess0J5ErrorySS_SiSgyyt_tcSgyAA0aL0OcSgtF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "includeForce",
+            "printedName": "includeForce(experimentName:groupIndex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP12includeForce14experimentName10groupIndexySS_SiSgtYaKF",
+            "mangledName": "$s8SigmaSDK0A6ClientP12includeForce14experimentName10groupIndexySS_SiSgtYaKF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "intro_iOS": "13",
+            "declAttributes": [
+              "Available"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "includeForce",
+            "printedName": "includeForce(experimentName:onSuccess:onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((()) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(()) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SigmaSDK.SigmaError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SigmaSDK.SigmaError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP12includeForce14experimentName9onSuccess0H5ErrorySS_yyt_tcSgyAA0aJ0OcSgtF",
+            "mangledName": "$s8SigmaSDK0A6ClientP12includeForce14experimentName9onSuccess0H5ErrorySS_yyt_tcSgyAA0aJ0OcSgtF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "includeForce",
+            "printedName": "includeForce(experimentName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP12includeForce14experimentNameySS_tYaKF",
+            "mangledName": "$s8SigmaSDK0A6ClientP12includeForce14experimentNameySS_tYaKF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "intro_iOS": "13",
+            "declAttributes": [
+              "Available"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "excludeForce",
+            "printedName": "excludeForce(experimentName:onSuccess:onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((()) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(()) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SigmaSDK.SigmaError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SigmaSDK.SigmaError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP12excludeForce14experimentName9onSuccess0H5ErrorySS_yyt_tcSgyAA0aJ0OcSgtF",
+            "mangledName": "$s8SigmaSDK0A6ClientP12excludeForce14experimentName9onSuccess0H5ErrorySS_yyt_tcSgyAA0aJ0OcSgtF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "excludeForce",
+            "printedName": "excludeForce(experimentName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP12excludeForce14experimentNameySS_tYaKF",
+            "mangledName": "$s8SigmaSDK0A6ClientP12excludeForce14experimentNameySS_tYaKF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "intro_iOS": "13",
+            "declAttributes": [
+              "Available"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "excludeForceAll",
+            "printedName": "excludeForceAll(onSuccess:onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((()) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(()) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SigmaSDK.SigmaError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SigmaSDK.SigmaError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP15excludeForceAll9onSuccess0G5Erroryyyt_tcSg_yAA0aI0OcSgtF",
+            "mangledName": "$s8SigmaSDK0A6ClientP15excludeForceAll9onSuccess0G5Erroryyyt_tcSg_yAA0aI0OcSgtF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "excludeForceAll",
+            "printedName": "excludeForceAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP15excludeForceAllyyYaKF",
+            "mangledName": "$s8SigmaSDK0A6ClientP15excludeForceAllyyYaKF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "intro_iOS": "13",
+            "declAttributes": [
+              "Available"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -1622,6 +2078,246 @@
             "declKind": "EnumElement",
             "usr": "s:8SigmaSDK0A5ErrorO037experimentGroupNotMatchingFeatureFlagE0yACSS_S2SSaySSGtcACmF",
             "mangledName": "$s8SigmaSDK0A5ErrorO037experimentGroupNotMatchingFeatureFlagE0yACSS_S2SSaySSGtcACmF",
+            "moduleName": "SigmaSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "experimentSplitIdNotFound",
+            "printedName": "experimentSplitIdNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SigmaSDK.SigmaError.Type) -> (Swift.String) -> SigmaSDK.SigmaError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SigmaSDK.SigmaError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(experiment: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SigmaSDK.SigmaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SigmaSDK0A5ErrorO25experimentSplitIdNotFoundyACSS_tcACmF",
+            "mangledName": "$s8SigmaSDK0A5ErrorO25experimentSplitIdNotFoundyACSS_tcACmF",
+            "moduleName": "SigmaSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "experimentGroupIndexNotFound",
+            "printedName": "experimentGroupIndexNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SigmaSDK.SigmaError.Type) -> (Swift.String, Swift.Int) -> SigmaSDK.SigmaError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.Int) -> SigmaSDK.SigmaError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(experiment: Swift.String, index: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SigmaSDK.SigmaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SigmaSDK0A5ErrorO28experimentGroupIndexNotFoundyACSS_SitcACmF",
+            "mangledName": "$s8SigmaSDK0A5ErrorO28experimentGroupIndexNotFoundyACSS_SitcACmF",
+            "moduleName": "SigmaSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "experimentAlreadyContainsUser",
+            "printedName": "experimentAlreadyContainsUser",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SigmaSDK.SigmaError.Type) -> (Swift.String) -> SigmaSDK.SigmaError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SigmaSDK.SigmaError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(experiment: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SigmaSDK.SigmaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SigmaSDK0A5ErrorO29experimentAlreadyContainsUseryACSS_tcACmF",
+            "mangledName": "$s8SigmaSDK0A5ErrorO29experimentAlreadyContainsUseryACSS_tcACmF",
+            "moduleName": "SigmaSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "experimentGroupAlreadyContainsUser",
+            "printedName": "experimentGroupAlreadyContainsUser",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SigmaSDK.SigmaError.Type) -> (Swift.String, Swift.Int) -> SigmaSDK.SigmaError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.Int) -> SigmaSDK.SigmaError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(experiment: Swift.String, index: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SigmaSDK.SigmaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SigmaSDK0A5ErrorO34experimentGroupAlreadyContainsUseryACSS_SitcACmF",
+            "mangledName": "$s8SigmaSDK0A5ErrorO34experimentGroupAlreadyContainsUseryACSS_SitcACmF",
             "moduleName": "SigmaSDK"
           },
           {
@@ -5154,14 +5850,14 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/ConfigNetworkRoute.swift",
       "kind": "StringLiteral",
-      "offset": 121,
+      "offset": 165,
       "length": 13,
       "value": "\"config.json\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/ConfigNetworkRoute.swift",
       "kind": "Array",
-      "offset": 201,
+      "offset": 245,
       "length": 2,
       "value": "[]"
     },
@@ -5348,6 +6044,13 @@
       "value": "\"sigmaPrivateId\""
     },
     {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/StorageClient.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 24,
+      "value": "\"sigmaForcedExperiments\""
+    },
+    {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/ConditionSign.swift",
       "kind": "StringLiteral",
       "offset": 74,
@@ -5642,16 +6345,16 @@
       "value": "\"value\""
     },
     {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoRoute.swift",
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoNetworkRoute.swift",
       "kind": "StringLiteral",
-      "offset": 111,
+      "offset": 164,
       "length": 5,
       "value": "\"geo\""
     },
     {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoRoute.swift",
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Utils-Sigma\/Network\/GeoNetworkRoute.swift",
       "kind": "Array",
-      "offset": 183,
+      "offset": 236,
       "length": 2,
       "value": "[]"
     },
@@ -6032,6 +6735,13 @@
       "offset": 381,
       "length": 1,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
+      "kind": "IntegerLiteral",
+      "offset": 874,
+      "length": 2,
+      "value": "10"
     }
   ]
 }

@@ -47,6 +47,26 @@ public protocol SigmaClient {
   @available(iOS 13, *)
   func getExperiment(name: Swift.String) async throws -> (any SigmaSDK.SigmaExperiment)?
   #endif
+  func includeForce(experimentName: Swift.String, groupIndex: Swift.Int?, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  func includeForce(experimentName: Swift.String, groupIndex: Swift.Int?) async throws
+  #endif
+  func includeForce(experimentName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  func includeForce(experimentName: Swift.String) async throws
+  #endif
+  func excludeForce(experimentName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  func excludeForce(experimentName: Swift.String) async throws
+  #endif
+  func excludeForceAll(onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 13, *)
+  func excludeForceAll() async throws
+  #endif
 }
 public protocol SigmaPropertyType {
   init?(sigmaString: Swift.String)
@@ -75,6 +95,10 @@ public enum SigmaError : Swift.Error, Swift.CustomStringConvertible {
   case featureFlagRulesNotSatisfied(featureFlag: Swift.String)
   case experimentNotFound(experiment: Swift.String)
   case experimentGroupNotMatchingFeatureFlagGroup(experiment: Swift.String, featureFlag: Swift.String, userGroup: Swift.String, featureFlagGroups: [Swift.String])
+  case experimentSplitIdNotFound(experiment: Swift.String)
+  case experimentGroupIndexNotFound(experiment: Swift.String, index: Swift.Int)
+  case experimentAlreadyContainsUser(experiment: Swift.String)
+  case experimentGroupAlreadyContainsUser(experiment: Swift.String, index: Swift.Int)
   public var description: Swift.String {
     get
   }

@@ -142,6 +142,48 @@ do {
 
 Несмотря на то, что методы получения Feature Flag выбрасывают ошибки, даже при отсутствии ошибок значение флага может быть `nil`. Эта ситуация может возникнуть, например, в случае, если флаг привязан к эксперименту, в который пользователь не попал. Эта ситуация не ошибочная: ожидаемо, что для данного пользователя значение Feature Flag недоступно, поэтому SDK возвращает `nil`.
 
+Для получения полного списка Feature Flag, которые есть у пользователя, используются следующие методы `SigmaClient`:
+
+```swift
+func getUserFeatureFlagsDetails(onSuccess: SigmaSuccessCallback<[String: SigmaPropertyType]>?, onError: SigmaErrorCallback?)
+func getUserFeatureFlagsDetails() async throws -> [String: SigmaPropertyType]
+```
+
+Методы возвращают словарь, где ключом является название Feature Flag, а значением - значение Feature Flag. Значение FeatureFlag может быть типа `Bool`, `Int`, `Double`, `String` или `[String: Any]`.
+
+Пример получения полного списка Feature Flag:
+```swift
+import SigmaSDK
+
+guard let client = Sigma.getClient() else { return }
+
+// Callback версия
+client.getUserFeatureFlagsDetails(
+    onSuccess: { dictionary in
+        if let dictionaryFlag = dictionary["my_feature_flag"] as? [String: Any] {
+            // Обработка значения Feature Flag типа [String: Any]
+        } else {
+            // Обработка значения Feature Flag типа Bool, Int, Double или String
+        }
+    },
+    onError: { error in
+        // Обработка ошибки
+    }
+)
+
+// Async-await версия
+do {
+    let dictionary = try await client.getUserFeatureFlagsDetails()
+    if let dictionaryFlag = dictionary["my_feature_flag"] as? [String: Any] {
+        // Обработка значения Feature Flag типа [String: Any]
+    } else {
+        // Обработка значения Feature Flag типа Bool, Int, Double или String
+    }
+} catch let error {
+    // Обработка ошибки
+}
+```
+
 ### Получение экспериментов
 
 Для получения всех экспериментов, в которые попал пользователь, используются следующие методы `SigmaClient`:
@@ -215,6 +257,68 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 
 Значение FeatureFlag или параметра эксперимента может быть типа `Bool`, `Int`, `Double`, `String` или `[String: Any]`.
 
+### Принудительное добавление пользователя в эксперимент (debug-only)
+
+Для того, чтобы принудительно добавить пользователя в эксперимент, используются следующие методы `SigmaClient`:
+
+```swift
+func includeForce(experimentName: String, groupIndex: Int?, onSuccess: SigmaSuccessCallback<Void>?, onError: SigmaErrorCallback?)
+func includeForce(experimentName: String, groupIndex: Int?) async throws
+func includeForce(experimentName: String, onSuccess: SigmaSuccessCallback<Void>?, onError: SigmaErrorCallback?)
+func includeForce(experimentName: String) async throws
+func excludeForce(experimentName: String, onSuccess: SigmaSuccessCallback<Void>?, onError: SigmaErrorCallback?)
+func excludeForce(experimentName: String) async throws
+func excludeForceAll(onSuccess: SigmaSuccessCallback<Void>?, onError: SigmaErrorCallback?)
+func excludeForceAll() async throws
+```
+
+Методы `includeForce(...)` принудительно добавят пользователя в forced user list эксперимента, если не передан `groupIndex`, или в forced user list группы эксперимента, если `groupIndex` передан (при наличии соответствующей группы в эксперименте). Результаты работы данных методов кэшируются и будут влиять на последующие запуски приложения (только на текущем устройстве). Для того, чтобы обратить действие данных методов, используются методы `excludeForce(...)` (для конкретного эксперимента) или `excludeForceAll()` (для всех экспериментов). Данные методы не предназначены для production, а должны быть использованы при тестировании через debug-меню или его аналоги. Если пользователь уже присутствует в принудительном списке эксперимента или группы, данные методы возвращают ошибку.
+
+Примеры принудительного добавления пользователя в эксперимент:
+
+```swift
+import SigmaSDK
+
+guard let client = Sigma.getClient() else { return }
+let experimentName = "experiment_name"
+
+// Callback версии
+client.includeForce(
+    experimentName: experimentName,
+    onSuccess: {
+        // Пользователь добавлен в принудительный список
+    },
+    onError: { error in
+        // Произошла ошибка
+    }
+)
+
+client.excludeForce(
+    experimentName: experimentName,
+    onSuccess: { experiment in
+        // Пользователь исключен из принудительного списка
+    },
+    onError: { error in
+        // Произошла ошибка
+    }
+)
+
+// Async-await версии
+do {
+    try await client.includeForce(experimentName: experimentName)
+    // Пользователь добавлен в принудительный список
+} catch let error {
+    // Произошла ошибка
+}
+
+do {
+    try await client.excludeForce(experimentName: experimentName)
+    // Пользователь исключен из принудительного списка
+} catch let error {
+    // Произошла ошибка
+}
+```
+
 ## Список параметров, автоматически определяющихся на стороне SDK:
 
 - `appVersion` - версия приложения пользователя.
@@ -229,6 +333,13 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 - `geo.ip` - IP-адрес пользователя.
 
 ## Changelog
+
+### 1.4.0
+- Добавлены методы `SigmaClient.includeForce`, `SigmaClient.excludeForce`, `SigmaClient.excludeForceAll` для принудительного включения пользвователя в эксперимент (debug-only)
+
+### 1.3.3
+- Добавлен метод `SigmaClient.getUserFeatureFlagsDetails` для получения всех Feature Flag пользователя.
+- Добавлена поддержка списка платформ вместо одной платформы в экспериментах.
 
 ### 1.3.2
 - Усовершенствован механизм проверки актуальности свойств `SigmaUser`. Каждое свойство пользователя считается актуальным только в течение 24 часов после его назначения / изменения.
