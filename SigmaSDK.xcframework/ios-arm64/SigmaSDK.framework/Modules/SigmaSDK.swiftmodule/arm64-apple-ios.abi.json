@@ -5948,28 +5948,28 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
       "kind": "StringLiteral",
-      "offset": 124,
+      "offset": 108,
       "length": 12,
       "value": "\"is_default\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
       "kind": "StringLiteral",
-      "offset": 192,
+      "offset": 176,
       "length": 23,
       "value": "\"conditional_statement\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
       "kind": "StringLiteral",
-      "offset": 124,
+      "offset": 108,
       "length": 12,
       "value": "\"is_default\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Rule.swift",
       "kind": "StringLiteral",
-      "offset": 192,
+      "offset": 176,
       "length": 23,
       "value": "\"conditional_statement\""
     },
@@ -6319,28 +6319,28 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Condition.swift",
       "kind": "StringLiteral",
-      "offset": 151,
+      "offset": 135,
       "length": 16,
       "value": "\"condition_sign\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Condition.swift",
       "kind": "StringLiteral",
-      "offset": 190,
+      "offset": 174,
       "length": 7,
       "value": "\"value\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Condition.swift",
       "kind": "StringLiteral",
-      "offset": 151,
+      "offset": 135,
       "length": 16,
       "value": "\"condition_sign\""
     },
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Private\/Models\/Condition.swift",
       "kind": "StringLiteral",
-      "offset": 190,
+      "offset": 174,
       "length": 7,
       "value": "\"value\""
     },
