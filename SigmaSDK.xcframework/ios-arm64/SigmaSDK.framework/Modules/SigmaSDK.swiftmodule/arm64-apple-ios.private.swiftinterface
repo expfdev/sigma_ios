@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SigmaSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import CryptoKit
 import Foundation
@@ -28,45 +29,43 @@ public protocol SigmaClient {
   func editUserProperties(builder: (SigmaSDK.SigmaUser.Builder) -> SigmaSDK.SigmaUser.Builder)
   func clearUserProperties()
   func checkFlag<T>(flagName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<T?>?, onError: SigmaSDK.SigmaErrorCallback?) where T : SigmaSDK.SigmaPropertyType
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
   func checkFlag<T>(flagName: Swift.String) async throws -> T? where T : SigmaSDK.SigmaPropertyType
-  #endif
   func getUserFeatureFlagsDetails(onSuccess: SigmaSDK.SigmaSuccessCallback<[Swift.String : any SigmaSDK.SigmaPropertyType]>?, onError: SigmaSDK.SigmaErrorCallback?)
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
   func getUserFeatureFlagsDetails() async throws -> [Swift.String : any SigmaSDK.SigmaPropertyType]
-  #endif
-  func getAllUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<[any SigmaSDK.SigmaExperiment]>?, onError: SigmaSDK.SigmaErrorCallback?)
-  #if compiler(>=5.3) && $AsyncAwait
+  func getAllUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
   @available(iOS 13, *)
-  func getAllUserExperiments() async throws -> [any SigmaSDK.SigmaExperiment]
-  #endif
+  func getAllUserExperiments() async throws -> Swift.String?
+  func getAllUserExperiments(estimateHoldouts: Swift.Bool, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
+  @available(iOS 13, *)
+  func getAllUserExperiments(estimateHoldouts: Swift.Bool) async throws -> Swift.String?
   func getExperiment(name: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<(any SigmaSDK.SigmaExperiment)?>?, onError: SigmaSDK.SigmaErrorCallback?)
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
   func getExperiment(name: Swift.String) async throws -> (any SigmaSDK.SigmaExperiment)?
-  #endif
+  func getHoldout(name: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Bool>?, onError: SigmaSDK.SigmaErrorCallback?)
+  @available(iOS 13, *)
+  func getHoldout(name: Swift.String) async throws -> Swift.Bool
+  func getAllUserHoldouts(onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
+  @available(iOS 13, *)
+  func getAllUserHoldouts() async throws -> Swift.String?
   func includeForce(experimentName: Swift.String, groupIndex: Swift.Int?, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
   func includeForce(experimentName: Swift.String, groupIndex: Swift.Int?) async throws
-  #endif
   func includeForce(experimentName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
   func includeForce(experimentName: Swift.String) async throws
-  #endif
   func excludeForce(experimentName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
   func excludeForce(experimentName: Swift.String) async throws
-  #endif
   func excludeForceAll(onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
-  #if compiler(>=5.3) && $AsyncAwait
   @available(iOS 13, *)
   func excludeForceAll() async throws
-  #endif
+  @available(*, deprecated, message: "Will be removed in future releases.")
+  func getAllUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<[any SigmaSDK.SigmaExperiment]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  @available(iOS 13, *)
+  @available(*, deprecated, message: "Will be removed in future releases.")
+  func getAllUserExperiments() async throws -> [any SigmaSDK.SigmaExperiment]
 }
 public protocol SigmaPropertyType {
   init?(sigmaString: Swift.String)
@@ -99,6 +98,7 @@ public enum SigmaError : Swift.Error, Swift.CustomStringConvertible {
   case experimentGroupIndexNotFound(experiment: Swift.String, index: Swift.Int)
   case experimentAlreadyContainsUser(experiment: Swift.String)
   case experimentGroupAlreadyContainsUser(experiment: Swift.String, index: Swift.Int)
+  case holdoutNotFound(holdout: Swift.String)
   public var description: Swift.String {
     get
   }

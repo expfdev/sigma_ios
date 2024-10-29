@@ -189,8 +189,8 @@ do {
 Для получения всех экспериментов, в которые попал пользователь, используются следующие методы `SigmaClient`:
 
 ```swift
-func getAllUserExperiments(onSuccess: SigmaSuccessCallback<[SigmaExperiment]>?, onError: SigmaErrorCallback?)
-func getAllUserExperiments() async throws -> [SigmaExperiment]
+func getAllUserExperiments(onSuccess: SigmaSuccessCallback<String?>?, onError: SigmaErrorCallback?)
+func getAllUserExperiments() async throws -> String?
 ```
 
 Для получения эксперимента по названию, используются следующие методы `SigmaClient`:
@@ -208,12 +208,11 @@ func getExperiment(name: String) async throws -> SigmaExperiment?
 import SigmaSDK
 
 guard let client = Sigma.getClient() else { return }
-let flagName = "my_first_flag"
 
 // Callback версии
 client.getAllUserExperiments(
     onSuccess: { experiments in
-        // Обработка всех экспериментов, в которые попал пользователь
+        // Обработка строки вида "expId.userGroupIndex|expId.userGroupIndex|...", где `expId` - идентификатор эксперимента, `userGroupIndex` - индекс группы пользователя в эксперименте.
     },
     onError: { error in
         // Обработка ошибки
@@ -233,7 +232,7 @@ client.getExperiment(
 // Async-await версии
 do {
     let allExperiments = try await client.getAllUserExperiments()
-    // Обработка всех экспериментов, в которые попал пользователь
+    // Обработка строки вида "expId.userGroupIndex|expId.userGroupIndex|...", где `expId` - идентификатор эксперимента, `userGroupIndex` - индекс группы пользователя в эксперименте.
 } catch let error {
     // Обработка ошибки
 }
@@ -256,6 +255,65 @@ func getFeatureFlagValue<T: SigmaPropertyType>(flagName: String) throws -> T?
 ```
 
 Значение FeatureFlag или параметра эксперимента может быть типа `Bool`, `Int`, `Double`, `String` или `[String: Any]`.
+
+### Получение holdout-экспериментов
+
+Для получения всех holdout-экспериментов, в которые попал пользователь, используются следующие методы `SigmaClient`:
+
+```swift
+func getAllUserHoldouts(onSuccess: SigmaSuccessCallback<String?>?, onError: SigmaErrorCallback?)
+func getAllUserHoldouts() async throws -> String?
+```
+
+Для получения информации, попал ли пользователь в конкретный holdout-эксперимент по названию, используются следующие методы `SigmaClient`:
+
+```swift
+func getHoldout(name: String, onSuccess: SigmaSuccessCallback<Bool>?, onError: SigmaErrorCallback?)
+func getHoldout(name: String) async throws -> Bool
+```
+
+Примеры работы с holdout-экспериментами:
+
+```swift
+import SigmaSDK
+
+guard let client = Sigma.getClient() else { return }
+
+// Callback версии
+client.getAllUserHoldouts(
+    onSuccess: { holdouts in
+        // Обработка строки вида "holdoutId.userGroupIndex|holdoutId.userGroupIndex|...", где `holdoutId` - идентификатор holdout-эксперимента, `userGroupIndex` - индекс группы пользователя в holdout-эксперименте (всегда 0).
+    },
+    onError: { error in
+        // Обработка ошибки
+    }
+)
+
+client.getHoldout(
+    name: "my_first_holdout",
+    onSuccess: { isInHoldout in
+        // Обработка информации, попал ли пользователь в holdout-эксперимент
+    },
+    onError: { error in
+        // Обработка ошибки
+    }
+)
+
+// Async-await версии
+do {
+    let allHoldouts = try await client.getAllUserHoldouts()
+    // Обработка строки вида "holdoutId.userGroupIndex|holdoutId.userGroupIndex|...", где `holdoutId` - идентификатор holdout-эксперимента, `userGroupIndex` - индекс группы пользователя в holdout-эксперименте (всегда 0).
+} catch let error {
+    // Обработка ошибки
+}
+
+do {
+    let holdout = try await client.getHoldout(name: "my_first_holdout")
+    // Обработка информации, попал ли пользователь в holdout-эксперимент
+} catch let error {
+    // Обработка ошибки
+}
+```
 
 ### Принудительное добавление пользователя в эксперимент (debug-only)
 
@@ -333,6 +391,12 @@ do {
 - `geo.ip` - IP-адрес пользователя.
 
 ## Changelog
+
+### 1.5.0.
+- Метод `SigmaClient.getAllUserExperiments`, возвращающий массив экспериментов, помечен как устаревший. Новый метод `SigmaClient.getAllUserExperiments` возвращает строку вида "expId.userGroupIndex|expId.userGroupIndex|...", где `expId` - идентификатор эксперимента, `userGroupIndex` - индекс группы пользователя в эксперименте. Возвращает `nil`, если пользователь не попал ни в один эксперимент.
+- Добавлен метод `SigmaClient.getAllUserHoldouts`, возвращающий строку вида "holdoutId.userGroupIndex|holdoutId.userGroupIndex|...", где `holdoutId` - идентификатор holdout-эксперимента, `userGroupIndex` - индекс группы пользователя в holdout-эксперименте (всегда 0). Возвращает `nil`, если пользователь не попал ни в один holdout-эксперимент.
+- Добавлен метод `SigmaClient.getHoldout`, возвращающий `Bool`, означающий, попал ли пользователь в holdout-эксперимент с переданным идентификатором эксперимента или нет. Если такого идентификатора нет, возвращает ошибку.
+- Добавлен параметр `estimateHoldouts` в метод `SigmaClient.getAllUserExperiments`. Если `true`, то метод вернет все эксперименты, включая holdout-эксперименты, в которые попал пользователь. Если `false`, то метод вернет только эксперименты, не являющиеся holdout-экспериментами. По умолчанию `true`.
 
 ### 1.4.3
 - Исправлена ошибка, когда значение Feature Flag бралось из эксперимента, в который пользователь не попал по ЦА.
