@@ -392,7 +392,10 @@ do {
 
 ## Changelog
 
-### 1.5.0.
+### 1.5.1
+- Исправлена ошибка парсинга holdout-экспериментов.
+
+### 1.5.0
 - Метод `SigmaClient.getAllUserExperiments`, возвращающий массив экспериментов, помечен как устаревший. Новый метод `SigmaClient.getAllUserExperiments` возвращает строку вида "expId.userGroupIndex|expId.userGroupIndex|...", где `expId` - идентификатор эксперимента, `userGroupIndex` - индекс группы пользователя в эксперименте. Возвращает `nil`, если пользователь не попал ни в один эксперимент.
 - Добавлен метод `SigmaClient.getAllUserHoldouts`, возвращающий строку вида "holdoutId.userGroupIndex|holdoutId.userGroupIndex|...", где `holdoutId` - идентификатор holdout-эксперимента, `userGroupIndex` - индекс группы пользователя в holdout-эксперименте (всегда 0). Возвращает `nil`, если пользователь не попал ни в один holdout-эксперимент.
 - Добавлен метод `SigmaClient.getHoldout`, возвращающий `Bool`, означающий, попал ли пользователь в holdout-эксперимент с переданным идентификатором эксперимента или нет. Если такого идентификатора нет, возвращает ошибку.
