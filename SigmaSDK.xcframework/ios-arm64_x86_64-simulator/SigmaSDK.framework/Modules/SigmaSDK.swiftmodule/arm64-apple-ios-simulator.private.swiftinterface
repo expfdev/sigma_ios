@@ -92,6 +92,7 @@ public enum SigmaError : Swift.Error, Swift.CustomStringConvertible {
   case featureFlagNotFound(featureFlag: Swift.String)
   case featureFlagNoRules(featureFlag: Swift.String)
   case featureFlagRulesNotSatisfied(featureFlag: Swift.String)
+  case experimentsEmpty
   case experimentNotFound(experiment: Swift.String)
   case experimentGroupNotMatchingFeatureFlagGroup(experiment: Swift.String, featureFlag: Swift.String, userGroup: Swift.String, featureFlagGroups: [Swift.String])
   case experimentSplitIdNotFound(experiment: Swift.String)
@@ -99,6 +100,7 @@ public enum SigmaError : Swift.Error, Swift.CustomStringConvertible {
   case experimentAlreadyContainsUser(experiment: Swift.String)
   case experimentGroupAlreadyContainsUser(experiment: Swift.String, index: Swift.Int)
   case holdoutNotFound(holdout: Swift.String)
+  case noForceIncludedExperiments
   public var description: Swift.String {
     get
   }

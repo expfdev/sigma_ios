@@ -2468,6 +2468,43 @@
           },
           {
             "kind": "Var",
+            "name": "experimentsEmpty",
+            "printedName": "experimentsEmpty",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SigmaSDK.SigmaError.Type) -> SigmaSDK.SigmaError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SigmaError",
+                    "printedName": "SigmaSDK.SigmaError",
+                    "usr": "s:8SigmaSDK0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SigmaSDK.SigmaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SigmaSDK0A5ErrorO16experimentsEmptyyA2CmF",
+            "mangledName": "$s8SigmaSDK0A5ErrorO16experimentsEmptyyA2CmF",
+            "moduleName": "SigmaSDK"
+          },
+          {
+            "kind": "Var",
             "name": "experimentNotFound",
             "printedName": "experimentNotFound",
             "children": [
@@ -2901,6 +2938,43 @@
             "declKind": "EnumElement",
             "usr": "s:8SigmaSDK0A5ErrorO15holdoutNotFoundyACSS_tcACmF",
             "mangledName": "$s8SigmaSDK0A5ErrorO15holdoutNotFoundyACSS_tcACmF",
+            "moduleName": "SigmaSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noForceIncludedExperiments",
+            "printedName": "noForceIncludedExperiments",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SigmaSDK.SigmaError.Type) -> SigmaSDK.SigmaError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SigmaError",
+                    "printedName": "SigmaSDK.SigmaError",
+                    "usr": "s:8SigmaSDK0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SigmaSDK.SigmaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8SigmaSDK0A5ErrorO26noForceIncludedExperimentsyA2CmF",
+            "mangledName": "$s8SigmaSDK0A5ErrorO26noForceIncludedExperimentsyA2CmF",
             "moduleName": "SigmaSDK"
           },
           {

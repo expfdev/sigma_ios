@@ -392,6 +392,9 @@ do {
 
 ## Changelog
 
+### 1.5.4
+- Улучшена обработка ошибок для методов `SigmaClient.includeForce`, `SigmaClient.excludeForce`, `SigmaClient.excludeForceAll`.
+
 ### 1.5.3
 - Исправлена ошибка обработки версий приложения в условиях экспериментов.
 
