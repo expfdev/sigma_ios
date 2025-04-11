@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SigmaSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SigmaSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import CommonCrypto
 import CryptoKit
 import Foundation
@@ -49,6 +49,12 @@ public protocol SigmaClient {
   func getAllUserHoldouts(onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
   @available(iOS 13, *)
   func getAllUserHoldouts() async throws -> Swift.String?
+  func getUserExperimentsDetails(estimateHoldouts: Swift.Bool, onSuccess: SigmaSDK.SigmaSuccessCallback<[SigmaSDK.SigmaExperimentDetail]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  @available(iOS 13, *)
+  func getUserExperimentsDetails(estimateHoldouts: Swift.Bool) async throws -> [SigmaSDK.SigmaExperimentDetail]
+  func getUserExperimentsDetails(onSuccess: SigmaSDK.SigmaSuccessCallback<[SigmaSDK.SigmaExperimentDetail]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  @available(iOS 13, *)
+  func getUserExperimentsDetails() async throws -> [SigmaSDK.SigmaExperimentDetail]
   func includeForce(experimentName: Swift.String, groupIndex: Swift.Int?, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
   @available(iOS 13, *)
   func includeForce(experimentName: Swift.String, groupIndex: Swift.Int?) async throws
@@ -115,6 +121,22 @@ public enum SigmaNetworkError : Swift.Error, Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
+}
+public struct SigmaExperimentDetail : Swift.Equatable {
+  public struct Group : Swift.Equatable {
+    public let index: Swift.Int
+    public static func == (a: SigmaSDK.SigmaExperimentDetail.Group, b: SigmaSDK.SigmaExperimentDetail.Group) -> Swift.Bool
+  }
+  public struct Result : Swift.Equatable {
+    public let name: Swift.String
+    public let value: Swift.String
+    public static func == (a: SigmaSDK.SigmaExperimentDetail.Result, b: SigmaSDK.SigmaExperimentDetail.Result) -> Swift.Bool
+  }
+  public let type: Swift.String?
+  public let id: Swift.String
+  public let group: SigmaSDK.SigmaExperimentDetail.Group
+  public let results: [SigmaSDK.SigmaExperimentDetail.Result]
+  public static func == (a: SigmaSDK.SigmaExperimentDetail, b: SigmaSDK.SigmaExperimentDetail) -> Swift.Bool
 }
 public struct SigmaUser : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws

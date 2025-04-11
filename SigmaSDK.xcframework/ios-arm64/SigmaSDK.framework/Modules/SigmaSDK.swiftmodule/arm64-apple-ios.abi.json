@@ -1411,6 +1411,250 @@
           },
           {
             "kind": "Function",
+            "name": "getUserExperimentsDetails",
+            "printedName": "getUserExperimentsDetails(estimateHoldouts:onSuccess:onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([SigmaSDK.SigmaExperimentDetail]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([SigmaSDK.SigmaExperimentDetail]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[SigmaSDK.SigmaExperimentDetail]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SigmaExperimentDetail",
+                            "printedName": "SigmaSDK.SigmaExperimentDetail",
+                            "usr": "s:8SigmaSDK0A16ExperimentDetailV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SigmaSDK.SigmaError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SigmaSDK.SigmaError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP25getUserExperimentsDetails16estimateHoldouts9onSuccess0J5ErrorySb_ySayAA0A16ExperimentDetailVGcSgyAA0aL0OcSgtF",
+            "mangledName": "$s8SigmaSDK0A6ClientP25getUserExperimentsDetails16estimateHoldouts9onSuccess0J5ErrorySb_ySayAA0A16ExperimentDetailVGcSgyAA0aL0OcSgtF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserExperimentsDetails",
+            "printedName": "getUserExperimentsDetails(estimateHoldouts:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SigmaSDK.SigmaExperimentDetail]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SigmaExperimentDetail",
+                    "printedName": "SigmaSDK.SigmaExperimentDetail",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP25getUserExperimentsDetails16estimateHoldoutsSayAA0A16ExperimentDetailVGSb_tYaKF",
+            "mangledName": "$s8SigmaSDK0A6ClientP25getUserExperimentsDetails16estimateHoldoutsSayAA0A16ExperimentDetailVGSb_tYaKF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "intro_iOS": "13",
+            "declAttributes": [
+              "Available"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserExperimentsDetails",
+            "printedName": "getUserExperimentsDetails(onSuccess:onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([SigmaSDK.SigmaExperimentDetail]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([SigmaSDK.SigmaExperimentDetail]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[SigmaSDK.SigmaExperimentDetail]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SigmaExperimentDetail",
+                            "printedName": "SigmaSDK.SigmaExperimentDetail",
+                            "usr": "s:8SigmaSDK0A16ExperimentDetailV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SigmaSDK.SigmaError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SigmaSDK.SigmaError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SigmaError",
+                        "printedName": "SigmaSDK.SigmaError",
+                        "usr": "s:8SigmaSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP25getUserExperimentsDetails9onSuccess0H5ErroryySayAA0A16ExperimentDetailVGcSg_yAA0aJ0OcSgtF",
+            "mangledName": "$s8SigmaSDK0A6ClientP25getUserExperimentsDetails9onSuccess0H5ErroryySayAA0A16ExperimentDetailVGcSg_yAA0aJ0OcSgtF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserExperimentsDetails",
+            "printedName": "getUserExperimentsDetails()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SigmaSDK.SigmaExperimentDetail]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SigmaExperimentDetail",
+                    "printedName": "SigmaSDK.SigmaExperimentDetail",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A6ClientP25getUserExperimentsDetailsSayAA0A16ExperimentDetailVGyYaKF",
+            "mangledName": "$s8SigmaSDK0A6ClientP25getUserExperimentsDetailsSayAA0A16ExperimentDetailVGyYaKF",
+            "moduleName": "SigmaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SigmaSDK.SigmaClient>",
+            "sugared_genericSig": "<Self where Self : SigmaSDK.SigmaClient>",
+            "protocolReq": true,
+            "intro_iOS": "13",
+            "declAttributes": [
+              "Available"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "includeForce",
             "printedName": "includeForce(experimentName:groupIndex:onSuccess:onError:)",
             "children": [
@@ -3442,6 +3686,553 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SigmaExperimentDetail",
+        "printedName": "SigmaExperimentDetail",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Group",
+            "printedName": "Group",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "index",
+                "printedName": "index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV5GroupV5indexSivp",
+                "mangledName": "$s8SigmaSDK0A16ExperimentDetailV5GroupV5indexSivp",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV5GroupV5indexSivg",
+                    "mangledName": "$s8SigmaSDK0A16ExperimentDetailV5GroupV5indexSivg",
+                    "moduleName": "SigmaSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Group",
+                    "printedName": "SigmaSDK.SigmaExperimentDetail.Group",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV5GroupV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Group",
+                    "printedName": "SigmaSDK.SigmaExperimentDetail.Group",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV5GroupV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV5GroupV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s8SigmaSDK0A16ExperimentDetailV5GroupV2eeoiySbAE_AEtFZ",
+                "moduleName": "SigmaSDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:8SigmaSDK0A16ExperimentDetailV5GroupV",
+            "mangledName": "$s8SigmaSDK0A16ExperimentDetailV5GroupV",
+            "moduleName": "SigmaSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Result",
+            "printedName": "Result",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "name",
+                "printedName": "name",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV4nameSSvp",
+                "mangledName": "$s8SigmaSDK0A16ExperimentDetailV6ResultV4nameSSvp",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV4nameSSvg",
+                    "mangledName": "$s8SigmaSDK0A16ExperimentDetailV6ResultV4nameSSvg",
+                    "moduleName": "SigmaSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "value",
+                "printedName": "value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV5valueSSvp",
+                "mangledName": "$s8SigmaSDK0A16ExperimentDetailV6ResultV5valueSSvp",
+                "moduleName": "SigmaSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV5valueSSvg",
+                    "mangledName": "$s8SigmaSDK0A16ExperimentDetailV6ResultV5valueSSvg",
+                    "moduleName": "SigmaSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "SigmaSDK.SigmaExperimentDetail.Result",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "SigmaSDK.SigmaExperimentDetail.Result",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s8SigmaSDK0A16ExperimentDetailV6ResultV2eeoiySbAE_AEtFZ",
+                "moduleName": "SigmaSDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV",
+            "mangledName": "$s8SigmaSDK0A16ExperimentDetailV6ResultV",
+            "moduleName": "SigmaSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SigmaSDK0A16ExperimentDetailV4typeSSSgvp",
+            "mangledName": "$s8SigmaSDK0A16ExperimentDetailV4typeSSSgvp",
+            "moduleName": "SigmaSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV4typeSSSgvg",
+                "mangledName": "$s8SigmaSDK0A16ExperimentDetailV4typeSSSgvg",
+                "moduleName": "SigmaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SigmaSDK0A16ExperimentDetailV2idSSvp",
+            "mangledName": "$s8SigmaSDK0A16ExperimentDetailV2idSSvp",
+            "moduleName": "SigmaSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV2idSSvg",
+                "mangledName": "$s8SigmaSDK0A16ExperimentDetailV2idSSvg",
+                "moduleName": "SigmaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "group",
+            "printedName": "group",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Group",
+                "printedName": "SigmaSDK.SigmaExperimentDetail.Group",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV5GroupV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SigmaSDK0A16ExperimentDetailV5groupAC5GroupVvp",
+            "mangledName": "$s8SigmaSDK0A16ExperimentDetailV5groupAC5GroupVvp",
+            "moduleName": "SigmaSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Group",
+                    "printedName": "SigmaSDK.SigmaExperimentDetail.Group",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV5GroupV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV5groupAC5GroupVvg",
+                "mangledName": "$s8SigmaSDK0A16ExperimentDetailV5groupAC5GroupVvg",
+                "moduleName": "SigmaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "results",
+            "printedName": "results",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SigmaSDK.SigmaExperimentDetail.Result]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "SigmaSDK.SigmaExperimentDetail.Result",
+                    "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SigmaSDK0A16ExperimentDetailV7resultsSayAC6ResultVGvp",
+            "mangledName": "$s8SigmaSDK0A16ExperimentDetailV7resultsSayAC6ResultVGvp",
+            "moduleName": "SigmaSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SigmaSDK.SigmaExperimentDetail.Result]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "SigmaSDK.SigmaExperimentDetail.Result",
+                        "usr": "s:8SigmaSDK0A16ExperimentDetailV6ResultV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV7resultsSayAC6ResultVGvg",
+                "mangledName": "$s8SigmaSDK0A16ExperimentDetailV7resultsSayAC6ResultVGvg",
+                "moduleName": "SigmaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SigmaExperimentDetail",
+                "printedName": "SigmaSDK.SigmaExperimentDetail",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SigmaExperimentDetail",
+                "printedName": "SigmaSDK.SigmaExperimentDetail",
+                "usr": "s:8SigmaSDK0A16ExperimentDetailV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SigmaSDK0A16ExperimentDetailV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8SigmaSDK0A16ExperimentDetailV2eeoiySbAC_ACtFZ",
+            "moduleName": "SigmaSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8SigmaSDK0A16ExperimentDetailV",
+        "mangledName": "$s8SigmaSDK0A16ExperimentDetailV",
+        "moduleName": "SigmaSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5201,13 +5992,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "_ExpressibleByBuiltinBooleanLiteral",
             "printedName": "_ExpressibleByBuiltinBooleanLiteral",
             "usr": "s:s35_ExpressibleByBuiltinBooleanLiteralP",
@@ -5241,6 +6025,13 @@
             "printedName": "CustomStringConvertible",
             "usr": "s:s23CustomStringConvertibleP",
             "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",

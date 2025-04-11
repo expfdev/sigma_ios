@@ -191,6 +191,10 @@ do {
 ```swift
 func getAllUserExperiments(onSuccess: SigmaSuccessCallback<String?>?, onError: SigmaErrorCallback?)
 func getAllUserExperiments() async throws -> String?
+func getUserExperimentsDetails(estimateHoldouts: Bool, onSuccess: SigmaSuccessCallback<[SigmaExperimentDetail]>?, onError: SigmaErrorCallback?)
+func getUserExperimentsDetails(estimateHoldouts: Bool) async throws -> [SigmaExperimentDetail]
+func getUserExperimentsDetails(onSuccess: SigmaSuccessCallback<[SigmaExperimentDetail]>?, onError: SigmaErrorCallback?)
+func getUserExperimentsDetails() async throws -> [SigmaExperimentDetail]
 ```
 
 Для получения эксперимента по названию, используются следующие методы `SigmaClient`:
@@ -219,6 +223,16 @@ client.getAllUserExperiments(
     }
 )
 
+client.getUserExperimentsDetails(
+    estimateHoldouts: shouldReturnHoldouts,
+    onSuccess: { experiments in
+        // Обработка массива объектов SigmaExperimentDetail, содержащих данные об эксперименте.
+    },
+    onError: { error in
+        // Обработка ошибки
+    }
+)
+
 client.getExperiment(
     name: "my_first_experiment",
     onSuccess: { experiment in
@@ -233,6 +247,13 @@ client.getExperiment(
 do {
     let allExperiments = try await client.getAllUserExperiments()
     // Обработка строки вида "expId.userGroupIndex|expId.userGroupIndex|...", где `expId` - идентификатор эксперимента, `userGroupIndex` - индекс группы пользователя в эксперименте.
+} catch let error {
+    // Обработка ошибки
+}
+
+do {
+    let allExperiments = try await client.getUserExperimentsDetails(estimateHoldouts: shouldReturnHoldouts)
+    // Обработка массива объектов SigmaExperimentDetail, содержащих данные об эксперименте.
 } catch let error {
     // Обработка ошибки
 }
@@ -391,6 +412,9 @@ do {
 - `geo.ip` - IP-адрес пользователя.
 
 ## Changelog
+
+### 1.6.0
+- Добавлены методы `SigmaClient.getUserExperimentsDetails`, возвращающие массив экспериментов, в которые попал полоьзователь.
 
 ### 1.5.4
 - Улучшена обработка ошибок для методов `SigmaClient.includeForce`, `SigmaClient.excludeForce`, `SigmaClient.excludeForceAll`.
