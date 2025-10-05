@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SigmaSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CommonCrypto
 import CryptoKit
 import Foundation
@@ -11,15 +11,25 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public protocol SigmaExperiment {
+  #if compiler(>=5.3) && $NonescapableTypes
   var groupIndex: Swift.Int? { get }
+  #endif
   @available(*, deprecated, message: "Will be removed in future releases.")
   var name: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Will be removed in future releases.")
   var userGroupName: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getParamValue<T>(name: Swift.String) -> T? where T : SigmaSDK.SigmaPropertyType
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getFeatureValue<T>(flagName: Swift.String) throws -> T? where T : SigmaSDK.SigmaPropertyType
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "getFeatureValue(flagName:)")
   func getFeatureFlagValue<T>(flagName: Swift.String) throws -> T? where T : SigmaSDK.SigmaPropertyType
+  #endif
 }
 public typealias SigmaSuccessCallback<T> = (T) -> Swift.Void
 public typealias SigmaErrorCallback = (SigmaSDK.SigmaError) -> Swift.Void
@@ -28,68 +38,120 @@ public protocol SigmaClient {
   func setUserProperties(builder: (SigmaSDK.SigmaUser.Builder) -> SigmaSDK.SigmaUser.Builder)
   func editUserProperties(builder: (SigmaSDK.SigmaUser.Builder) -> SigmaSDK.SigmaUser.Builder)
   func clearUserProperties()
+  #if compiler(>=5.3) && $NonescapableTypes
   func checkFlag<T>(flagName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<T?>?, onError: SigmaSDK.SigmaErrorCallback?) where T : SigmaSDK.SigmaPropertyType
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, *)
   func checkFlag<T>(flagName: Swift.String) async throws -> T? where T : SigmaSDK.SigmaPropertyType
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getUserFeatureFlagsDetails(onSuccess: SigmaSDK.SigmaSuccessCallback<[Swift.String : any SigmaSDK.SigmaPropertyType]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
   @available(iOS 13, *)
   func getUserFeatureFlagsDetails() async throws -> [Swift.String : any SigmaSDK.SigmaPropertyType]
+  #if compiler(>=5.3) && $NonescapableTypes
   func getAllUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, *)
   func getAllUserExperiments() async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getAllUserExperiments(estimateHoldouts: Swift.Bool, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, *)
   func getAllUserExperiments(estimateHoldouts: Swift.Bool) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getExperiment(name: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<(any SigmaSDK.SigmaExperiment)?>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, *)
   func getExperiment(name: Swift.String) async throws -> (any SigmaSDK.SigmaExperiment)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getHoldout(name: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Bool>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
   @available(iOS 13, *)
   func getHoldout(name: Swift.String) async throws -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   func getAllUserHoldouts(onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.String?>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, *)
   func getAllUserHoldouts() async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getUserExperimentsDetails(estimateHoldouts: Swift.Bool, onSuccess: SigmaSDK.SigmaSuccessCallback<[SigmaSDK.SigmaExperimentDetail]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
   @available(iOS 13, *)
   func getUserExperimentsDetails(estimateHoldouts: Swift.Bool) async throws -> [SigmaSDK.SigmaExperimentDetail]
+  #if compiler(>=5.3) && $NonescapableTypes
   func getUserExperimentsDetails(onSuccess: SigmaSDK.SigmaSuccessCallback<[SigmaSDK.SigmaExperimentDetail]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
   @available(iOS 13, *)
   func getUserExperimentsDetails() async throws -> [SigmaSDK.SigmaExperimentDetail]
+  #if compiler(>=5.3) && $NonescapableTypes
   func includeForce(experimentName: Swift.String, groupIndex: Swift.Int?, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, *)
   func includeForce(experimentName: Swift.String, groupIndex: Swift.Int?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func includeForce(experimentName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
   @available(iOS 13, *)
   func includeForce(experimentName: Swift.String) async throws
+  #if compiler(>=5.3) && $NonescapableTypes
   func excludeForce(experimentName: Swift.String, onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
   @available(iOS 13, *)
   func excludeForce(experimentName: Swift.String) async throws
+  #if compiler(>=5.3) && $NonescapableTypes
   func excludeForceAll(onSuccess: SigmaSDK.SigmaSuccessCallback<Swift.Void>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
   @available(iOS 13, *)
   func excludeForceAll() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Will be removed in future releases.")
   func getAllUserExperiments(onSuccess: SigmaSDK.SigmaSuccessCallback<[any SigmaSDK.SigmaExperiment]>?, onError: SigmaSDK.SigmaErrorCallback?)
+  #endif
   @available(iOS 13, *)
   @available(*, deprecated, message: "Will be removed in future releases.")
   func getAllUserExperiments() async throws -> [any SigmaSDK.SigmaExperiment]
 }
 public protocol SigmaPropertyType {
+  #if compiler(>=5.3) && $NonescapableTypes
   init?(sigmaString: Swift.String)
+  #endif
 }
 extension Swift.Bool : SigmaSDK.SigmaPropertyType {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(sigmaString: Swift.String)
+  #endif
 }
 extension Swift.Int : SigmaSDK.SigmaPropertyType {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(sigmaString: Swift.String)
+  #endif
 }
 extension Swift.Double : SigmaSDK.SigmaPropertyType {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(sigmaString: Swift.String)
+  #endif
 }
 extension Swift.String : SigmaSDK.SigmaPropertyType {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(sigmaString: Swift.String)
+  #endif
 }
 extension Swift.Dictionary : SigmaSDK.SigmaPropertyType where Key == Swift.String, Value == Any {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(sigmaString: Swift.String)
+  #endif
 }
 public enum SigmaError : Swift.Error, Swift.CustomStringConvertible {
   case initializationOfExistingClient(tag: Swift.String)
@@ -145,25 +207,53 @@ public struct SigmaUser : Swift.Codable {
 extension SigmaSDK.SigmaUser {
   @_hasMissingDesignatedInitializers final public class Builder {
     public init()
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setUserId(_ id: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setProfileId(_ id: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setDeviceId(_ id: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setAppVersion(_ version: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setOsName(_ name: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setOsVersion(_ version: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setGeoCode(_ code: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setGeoCountry(_ country: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setGeoState(_ state: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setGeoCity(_ city: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setEmail(_ email: Swift.String?) -> SigmaSDK.SigmaUser.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     final public func setCustomProperty<Value>(_ value: Value?, key: Swift.String) -> SigmaSDK.SigmaUser.Builder where Value : Swift.CustomStringConvertible
+    #endif
     final public func build() -> SigmaSDK.SigmaUser
     @objc deinit
   }
 }
 public enum Sigma {
   public static let defaultClientTag: Swift.String
-  public static func initializeClient(projectToken: Swift.String, initialUser: SigmaSDK.SigmaUser? = nil, apiURL: Swift.String = "https://api.expf.ru/api/v1/", cacheTTL: Swift.UInt = 10, retryCount: Swift.UInt = 3, tag: Swift.String = Sigma.defaultClientTag) throws -> any SigmaSDK.SigmaClient
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initializeClient(projectToken: Swift.String, initialUser: SigmaSDK.SigmaUser? = nil, apiURL: Swift.String = "https://api.expf.ru/api/v1/", cacheTTL: Swift.UInt = 10, retryCount: Swift.UInt = 0, tag: Swift.String = Sigma.defaultClientTag) throws -> any SigmaSDK.SigmaClient
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getClient(tag: Swift.String = Sigma.defaultClientTag) -> (any SigmaSDK.SigmaClient)?
+  #endif
   public static func removeClient(tag: Swift.String = Sigma.defaultClientTag)
 }
