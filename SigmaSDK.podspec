@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'SigmaSDK'
-    s.version           = '1.7.1'
+    s.version           = '1.8.0'
     s.summary           = 'Experimentation tool from EXPF'
     s.homepage          = 'https://expf.ru/sigma/'
 
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.license           = { :type => 'Apache-2.0', :file => 'LICENSE' }
 
     s.platform          = :ios
-    s.source            = { :git => 'https://github.com/expfdev/sigma_ios.git', :tag => '1.7.1' }
+    s.source            = { :git => 'https://github.com/expfdev/sigma_ios.git', :tag => '1.8.0' }
 
     s.vendored_frameworks = 'SigmaSDK.xcframework'
     s.ios.deployment_target = '11.0'

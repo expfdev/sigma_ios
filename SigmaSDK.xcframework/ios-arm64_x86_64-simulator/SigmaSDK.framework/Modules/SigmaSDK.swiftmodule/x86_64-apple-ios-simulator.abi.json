@@ -5072,7 +5072,7 @@
           {
             "kind": "Function",
             "name": "initializeClient",
-            "printedName": "initializeClient(projectToken:initialUser:apiURL:cacheTTL:retryCount:tag:)",
+            "printedName": "initializeClient(projectToken:initialUser:apiURL:cacheTTL:retryCount:fetchTimeout:tag:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5124,6 +5124,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "hasDefaultArg": true,
@@ -5131,8 +5138,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SigmaSDK0A0O16initializeClient12projectToken11initialUser6apiURL8cacheTTL10retryCount3tagAA0aD0_pSS_AA0aH0VSgSSS2uSStKFZ",
-            "mangledName": "$s8SigmaSDK0A0O16initializeClient12projectToken11initialUser6apiURL8cacheTTL10retryCount3tagAA0aD0_pSS_AA0aH0VSgSSS2uSStKFZ",
+            "usr": "s:8SigmaSDK0A0O16initializeClient12projectToken11initialUser6apiURL8cacheTTL10retryCount12fetchTimeout3tagAA0aD0_pSS_AA0aH0VSgSSS2uSdSStKFZ",
+            "mangledName": "$s8SigmaSDK0A0O16initializeClient12projectToken11initialUser6apiURL8cacheTTL10retryCount12fetchTimeout3tagAA0aD0_pSS_AA0aH0VSgSSS2uSdSStKFZ",
             "moduleName": "SigmaSDK",
             "static": true,
             "declAttributes": [
@@ -8244,7 +8251,14 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
       "kind": "IntegerLiteral",
-      "offset": 874,
+      "offset": 421,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1051,
       "length": 2,
       "value": "10"
     }
