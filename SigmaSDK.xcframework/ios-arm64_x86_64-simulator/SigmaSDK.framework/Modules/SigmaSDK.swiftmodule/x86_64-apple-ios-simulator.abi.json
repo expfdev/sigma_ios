@@ -8251,14 +8251,7 @@
     {
       "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
       "kind": "IntegerLiteral",
-      "offset": 421,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/sisupov\/Work\/SigmaSDK\/SigmaSDK\/Public\/Sigma.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1051,
+      "offset": 1163,
       "length": 2,
       "value": "10"
     }
